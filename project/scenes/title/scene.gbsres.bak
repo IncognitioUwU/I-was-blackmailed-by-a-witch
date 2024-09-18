@@ -18,6 +18,17 @@
     {
       "command": "EVENT_SET_VALUE",
       "args": {
+        "variable": "10",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "365edde9-f06c-4119-a9d6-32e82e568e43"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
         "variable": "23",
         "value": {
           "type": "number",

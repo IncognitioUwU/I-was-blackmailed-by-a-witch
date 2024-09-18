@@ -1,21 +1,22 @@
 {
   "_resourceType": "scene",
-  "id": "1a32753b-2390-4caf-8456-e4463c7b318c",
-  "_index": 0,
-  "type": "PLATFORM",
-  "name": "wave 1",
-  "symbol": "scene_1",
-  "x": 416,
-  "y": 96,
+  "id": "1297dc15-f946-4be1-9b5f-e4777e05020e",
+  "_index": 3,
+  "name": "wave 2",
+  "backgroundId": "ca7829dc-6972-4b8a-8f79-42c7c3fef6cb",
+  "tilesetId": "",
   "width": 24,
   "height": 18,
-  "backgroundId": "d83dec2b-e83f-477d-b35f-740faada3a95",
-  "tilesetId": "",
+  "type": "PLATFORM",
   "paletteIds": [
     ""
   ],
   "spritePaletteIds": [],
+  "collisions": "00120+0f48+0048+",
   "autoFadeSpeed": null,
+  "symbol": "scene_4",
+  "x": 616,
+  "y": 96,
   "playerSpriteSheetId": "13820021-636a-4829-b0f1-5267cffb0591",
   "script": [
     {
@@ -25,18 +26,17 @@
         "__collapse": false,
         "$variable[V0]$": {
           "type": "number",
-          "value": 1
+          "value": 2
         },
         "$variable[V1]$": {
           "type": "number",
           "value": 3
         }
       },
-      "id": "cc1f4ae7-4182-451f-9b85-7ecc0d1bca92"
+      "id": "1172bcd1-63fd-4edf-8d1a-371606fce37f"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": [],
-  "collisions": "00120+0f48+0048+"
+  "playerHit3Script": []
 }

@@ -65,7 +65,7 @@
       "args": {
         "text": [
           "Wave $07$ cleared!\n$V0$ seconds remaining.",
-          "You have $08$XP\nYou are currently level $10$\nYou have $$06$ credits\nYou have $05$ lives remaining"
+          "You have $08$XP\nYou have $$06$ credits\nYou have $05$ lives remaining"
         ],
         "avatarId": "",
         "__collapse": false
@@ -97,14 +97,14 @@
     {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "sceneId": "57378645-f61f-49d8-8986-9c1aaf09e41d",
+        "sceneId": "1297dc15-f946-4be1-9b5f-e4777e05020e",
         "x": {
           "type": "number",
-          "value": 0
+          "value": 11
         },
         "y": {
           "type": "number",
-          "value": 0
+          "value": 11
         },
         "direction": "",
         "fadeSpeed": "2"

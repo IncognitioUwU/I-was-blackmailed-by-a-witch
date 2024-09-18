@@ -94,6 +94,13 @@
             "id": "4f94cf04-a282-49a5-8516-968c96a55050"
           },
           {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "c513a416-8160-4bdd-8f41-5f31fd2d48ec"
+          },
+          {
             "command": "EVENT_ACTOR_SET_POSITION",
             "args": {
               "actorId": "0",

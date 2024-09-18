@@ -1,13 +1,13 @@
 {
   "_resourceType": "settings",
-  "worldScrollX": 314,
-  "worldScrollY": 210,
+  "worldScrollX": 1037.552978515625,
+  "worldScrollY": 221.3647003173828,
   "zoom": 224.21875,
   "navigatorSplitSizes": [
-    77,
+    106,
+    283,
     205,
-    197,
-    213
+    362
   ],
   "showNavigator": true,
   "showCollisions": true,
@@ -19,7 +19,7 @@
     "EVENT_SWITCH_SCENE"
   ],
   "debuggerEnabled": true,
-  "debuggerScriptType": "gbvm",
+  "debuggerScriptType": "editor",
   "debuggerVariablesFilter": "all",
   "debuggerCollapsedPanes": [],
   "debuggerPauseOnScriptChanged": false,

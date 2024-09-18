@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "ca7829dc-6972-4b8a-8f79-42c7c3fef6cb",
+  "name": "ldtk/Level_1__Tiles2.png",
+  "symbol": "bg_ldtk_level_1_tiles2_png",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 192,
+  "imageHeight": 144,
+  "filename": "ldtk/png/Level_1__Tiles2.png",
+  "tileColors": "",
+  "autoColor": false
+}

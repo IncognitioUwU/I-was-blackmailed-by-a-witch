@@ -1,21 +1,22 @@
 {
   "_resourceType": "scene",
-  "id": "1a32753b-2390-4caf-8456-e4463c7b318c",
-  "_index": 0,
-  "type": "PLATFORM",
-  "name": "wave 1",
-  "symbol": "scene_1",
-  "x": 416,
-  "y": 96,
+  "id": "1297dc15-f946-4be1-9b5f-e4777e05020e",
+  "_index": 3,
+  "name": "wave 2",
+  "backgroundId": "ca7829dc-6972-4b8a-8f79-42c7c3fef6cb",
+  "tilesetId": "",
   "width": 24,
   "height": 18,
-  "backgroundId": "d83dec2b-e83f-477d-b35f-740faada3a95",
-  "tilesetId": "",
+  "type": "PLATFORM",
   "paletteIds": [
     ""
   ],
   "spritePaletteIds": [],
+  "collisions": "00120+0f48+0048+",
   "autoFadeSpeed": null,
+  "symbol": "scene_4",
+  "x": 616,
+  "y": 96,
   "playerSpriteSheetId": "13820021-636a-4829-b0f1-5267cffb0591",
   "script": [
     {
@@ -56,7 +57,7 @@
                       "value": 2
                     }
                   },
-                  "id": "1bf0811f-778d-45c3-b612-e1f1ef762630"
+                  "id": "711553c8-c604-4fe5-8b16-3075b01b0491"
                 }
               ],
               "false": [
@@ -69,11 +70,11 @@
                       "value": 1
                     }
                   },
-                  "id": "00ccdc38-4394-4039-a037-3d7cbfdf4fab"
+                  "id": "fa6c324b-483c-4469-9706-32b2d4e2e6c0"
                 }
               ]
             },
-            "id": "8d6a8901-d49f-4a62-8eea-23366a53c2d5"
+            "id": "316fc508-00f6-40ea-a588-d1731cb2fd94"
           },
           {
             "command": "EVENT_TEXT",
@@ -98,11 +99,11 @@
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30
             },
-            "id": "9675d44a-288a-4872-a6fc-90770ca4fd36"
+            "id": "080870c9-014d-49a8-9a98-e2e8058562c0"
           }
         ]
       },
-      "id": "e10cec9f-62d7-42ad-a4a9-33351f846bbb"
+      "id": "e7e3fea4-ce68-45bf-8c6d-b25d18d5d2ca"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -118,11 +119,10 @@
           "value": 3
         }
       },
-      "id": "cc1f4ae7-4182-451f-9b85-7ecc0d1bca92"
+      "id": "1172bcd1-63fd-4edf-8d1a-371606fce37f"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": [],
-  "collisions": "00120+0f48+0048+"
+  "playerHit3Script": []
 }

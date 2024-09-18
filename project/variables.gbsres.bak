@@ -365,6 +365,11 @@
       "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L5",
       "name": "player_pixel_y",
       "symbol": "var_player_pixel_y_0"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L0",
+      "name": "health",
+      "symbol": "var_health_0"
     }
   ]
 }

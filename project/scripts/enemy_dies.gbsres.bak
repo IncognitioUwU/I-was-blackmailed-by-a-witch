@@ -138,6 +138,10 @@
                     "$variable[V1]$": {
                       "type": "number",
                       "value": 0
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 0
                     }
                   },
                   "id": "975bc7d8-3e3a-45f2-99a1-de02675b0b8a"

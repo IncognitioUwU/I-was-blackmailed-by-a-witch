@@ -4,7 +4,7 @@
   "name": "zombie_raven",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "c0440726-aeb8-444f-a242-aea05ab6d300",
+  "spriteSheetId": "96385dfb-ee85-436d-a207-0713a785ce48",
   "moveSpeed": 1,
   "animSpeed": 15,
   "paletteId": "",
@@ -17,7 +17,7 @@
         "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
         "$variable[V0]$": {
           "type": "number",
-          "value": 1
+          "value": 3
         },
         "$actor[1]$": "8edfec6a-60e7-43d5-8de9-c4eec3c5f08e",
         "$variable[V1]$": {
@@ -35,7 +35,7 @@
         "variable": "L0",
         "value": {
           "type": "number",
-          "value": 1
+          "value": 3
         }
       },
       "id": "5152bedf-9181-4936-854a-07b859ada7ba"
@@ -74,6 +74,11 @@
         "$variable[V0]$": {
           "type": "variable",
           "value": "L1"
+        },
+        "$variable[V1]$": {
+          "type": "property",
+          "target": "$self$",
+          "property": "ypos"
         }
       },
       "id": "da666765-f720-4160-982e-f01d8aafb6ab"
@@ -95,8 +100,8 @@
       "args": {
         "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
         "$variable[V1]$": {
-          "type": "number",
-          "value": 2
+          "type": "variable",
+          "value": "L0"
         },
         "$variable[V0]$": {
           "type": "number",

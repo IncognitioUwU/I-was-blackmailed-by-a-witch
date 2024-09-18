@@ -11,13 +11,54 @@
     },
     "V1": {
       "id": "V1",
-      "name": "Variable B",
+      "name": "level_threshold",
+      "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "Variable C",
       "passByReference": true
     }
   },
   "actors": {},
   "symbol": "script_24",
   "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V1",
+        "value": {
+          "type": "expression",
+          "value": "(4*(($V2$+1)*($V2$+1)))+($V2$+1) "
+        }
+      },
+      "id": "47f53088-4842-4bfa-99c8-f6a510b6c9d4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "$V1$"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "84382959-bf3b-4f15-9ddb-0f33f73abaa6"
+    },
     {
       "command": "EVENT_IF",
       "args": {
@@ -28,8 +69,8 @@
             "value": "V0"
           },
           "valueB": {
-            "type": "expression",
-            "value": "4*($10$*$10$)-2*$10$"
+            "type": "variable",
+            "value": "V1"
           }
         },
         "__collapseElse": false

@@ -370,6 +370,16 @@
       "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L0",
       "name": "health",
       "symbol": "var_health_0"
+    },
+    {
+      "id": "9112dcfb-2315-4241-970d-a3ca027bfe64__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_1"
+    },
+    {
+      "id": "a5f7dc6a-140f-4464-a26b-45fdfd1a570e__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_2"
     }
   ]
 }

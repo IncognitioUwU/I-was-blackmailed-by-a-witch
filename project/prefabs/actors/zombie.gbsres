@@ -4,7 +4,7 @@
   "name": "zombie",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "8132e903-71b5-4e9d-8432-63ad33aa174a",
+  "spriteSheetId": "94790bda-e709-4d94-ab0f-3bf80e867745",
   "moveSpeed": 0.65,
   "animSpeed": 15,
   "paletteId": "",
@@ -35,7 +35,7 @@
         "variable": "L0",
         "value": {
           "type": "number",
-          "value": 2
+          "value": 4
         }
       },
       "id": "b358be0f-274e-4fe4-9d01-2990a9b20b49"
@@ -76,8 +76,8 @@
       "args": {
         "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
         "$variable[V1]$": {
-          "type": "number",
-          "value": 2
+          "type": "variable",
+          "value": "L0"
         },
         "$variable[V0]$": {
           "type": "number",
