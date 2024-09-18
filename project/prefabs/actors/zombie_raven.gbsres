@@ -1,0 +1,110 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f",
+  "name": "zombie_raven",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "c0440726-aeb8-444f-a242-aea05ab6d300",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "3",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$actor[1]$": "8edfec6a-60e7-43d5-8de9-c4eec3c5f08e",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "6b2baf26-d44f-442f-8878-f2de3a0777dc"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "5152bedf-9181-4936-854a-07b859ada7ba"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "fb96a684-55b5-4fca-8a49-c279930cb10f",
+        "$variable[V0]$": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V2]$": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        },
+        "$variable[V3]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "c5f8c5bf-fa8e-487c-8d74-98d983d61fe6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "fd4b4ede-046c-4e4e-8001-fe21b9eb11f3",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "da666765-f720-4160-982e-f01d8aafb6ab"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "8435a0ec-0ad5-400c-a892-7ce3a7ac7c8b"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$actor[1]$": "$self$"
+      },
+      "id": "bdf9221e-1740-4a20-8da6-26cd8950c1b3"
+    }
+  ]
+}

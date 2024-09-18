@@ -1,0 +1,21 @@
+{
+  "_resourceType": "font",
+  "id": "f7a53a48-6662-4bc0-9c1d-d7c6cb4eff00",
+  "name": "Condensed Mini",
+  "symbol": "font_condensed_mini",
+  "width": 128,
+  "height": 112,
+  "filename": "condensed-font-pack/condensed-mini.png",
+  "mapping": {
+    "﹩": 36,
+    "＄": 36,
+    "﹪": 37,
+    "％": 37,
+    "€": 128,
+    "‰": 137,
+    "Œ": 140,
+    "œ": 156,
+    "￡": 163,
+    "￥": 165
+  }
+}

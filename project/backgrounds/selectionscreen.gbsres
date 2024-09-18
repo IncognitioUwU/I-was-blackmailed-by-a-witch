@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a2c0bc54-537a-404a-9507-b9b78ef8ac54",
+  "name": "selectionscreen",
+  "symbol": "bg_selectionscreen",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "selectionscreen.png",
+  "tileColors": "",
+  "autoColor": false
+}

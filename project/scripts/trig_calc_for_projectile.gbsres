@@ -1,0 +1,45 @@
+{
+  "_resourceType": "script",
+  "id": "5a360a7d-eb10-47de-beb9-d9a8e4d1684b",
+  "name": "trig_calc_for_projectile",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "x_distance",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "y_distance",
+      "passByReference": true
+    },
+    "V3": {
+      "id": "V3",
+      "name": "angle",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_23",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V3",
+        "value": {
+          "type": "atan2",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "V1"
+          }
+        }
+      },
+      "id": "9a6cf6d4-ef60-4398-92bd-0b3c62ffd144"
+    }
+  ]
+}

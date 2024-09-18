@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "c0112d51-d2b3-464f-abd7-bb4b98dde31b",
+  "name": "zombie",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8132e903-71b5-4e9d-8432-63ad33aa174a",
+  "moveSpeed": 0.65,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": true,
+  "collisionGroup": "3",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$actor[1]$": "8edfec6a-60e7-43d5-8de9-c4eec3c5f08e",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "id": "5b3313b2-f1f8-4bc5-91e1-97be99e0f173"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "b358be0f-274e-4fe4-9d01-2990a9b20b49"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "fb96a684-55b5-4fca-8a49-c279930cb10f",
+        "$variable[V0]$": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V2]$": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        },
+        "$variable[V3]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "a7b9b1cf-13ef-4b30-821e-27c8523999f9"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$actor[1]$": "$self$"
+      },
+      "id": "d4dee651-38b1-4b83-9c42-e2870d2e6b18"
+    }
+  ]
+}

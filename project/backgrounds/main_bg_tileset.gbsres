@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a6be404a-60eb-4c2e-a816-cb11d02cf56e",
+  "name": "main_bg_tileset",
+  "symbol": "bg_main_bg_tileset",
+  "width": 54,
+  "height": 12,
+  "imageWidth": 432,
+  "imageHeight": 96,
+  "filename": "main_bg_tileset.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -1,0 +1,699 @@
+{
+  "_resourceType": "script",
+  "id": "100adf11-67a9-4994-a55e-68dc87908b90",
+  "name": "selection_page_item_detector",
+  "symbol": "script_16",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "temp",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 1 L/R",
+        "__collapse": true
+      },
+      "id": "7bbeb27d-f303-4d4b-a214-a16b6862c24b"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 6
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 5
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "18"
+        },
+        "__collapse": true
+      },
+      "id": "4d375037-989a-4d56-8694-b3183fbaa58a"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 2 L/R\nmove faster",
+        "__collapse": true
+      },
+      "id": "a2aea2b1-56c6-4dc6-84de-44329602c90c"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 6
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 7
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "18"
+        },
+        "__collapse": true
+      },
+      "id": "1d5b0777-6f0c-4659-8d58-39810579be48"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 1 Down",
+        "__collapse": true
+      },
+      "id": "3931846e-a6f5-4c1c-9cce-4090e9e1f5d5"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 8
+          },
+          "valueB": {
+            "type": "number",
+            "value": 9
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 5
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "19"
+        },
+        "__collapse": true
+      },
+      "id": "74e5e907-2d53-4162-9f2d-e1c8a23ac4ee"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 2 Down\nfaster crawl",
+        "__collapse": true
+      },
+      "id": "8c2e72c9-a8f5-4a7a-ade8-628f99de74a4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 8
+          },
+          "valueB": {
+            "type": "number",
+            "value": 9
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 7
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 4
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "19"
+        },
+        "__collapse": true
+      },
+      "id": "4e5aaa7f-2e16-426a-9daf-e003ac6387c1"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 1 up",
+        "__collapse": true
+      },
+      "id": "458f5152-f0e1-4899-b3be-33803c3810a6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 10
+          },
+          "valueB": {
+            "type": "number",
+            "value": 11
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 5
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "20"
+        },
+        "__collapse": true
+      },
+      "id": "7f9ce50b-d428-4ddd-820e-451258c58f09"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 2 up\nmore float",
+        "__collapse": true
+      },
+      "id": "97f83571-7a4a-4f34-88e5-1f29b09d04de"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 10
+          },
+          "valueB": {
+            "type": "number",
+            "value": 11
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 7
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 4
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "20"
+        },
+        "__collapse": true
+      },
+      "id": "c445cd88-dd08-449f-9ee2-398c1f196a04"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 1 B",
+        "__collapse": true
+      },
+      "id": "643ea355-42e2-442a-b7fc-33cf85934967"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 12
+          },
+          "valueB": {
+            "type": "number",
+            "value": 13
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 5
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 3
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "12"
+        },
+        "__collapse": true
+      },
+      "id": "dc3bc4a0-ecb6-4c60-83cd-05d548bcc86d"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 2 B\nfast shot",
+        "__collapse": true
+      },
+      "id": "d66510dd-c6cf-40ab-9512-2f0737045335"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 12
+          },
+          "valueB": {
+            "type": "number",
+            "value": 13
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 7
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 5
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "12"
+        },
+        "__collapse": true
+      },
+      "id": "db79f405-33d5-45c7-8fbc-e1215e29a4be"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 3 B\nfaster shot",
+        "__collapse": true
+      },
+      "id": "5245b6c7-bf6b-48d3-bd9f-a6bc53456cf8"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 12
+          },
+          "valueB": {
+            "type": "number",
+            "value": 13
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 9
+          },
+          "valueB": {
+            "type": "number",
+            "value": 10
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 7
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 3
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "12"
+        },
+        "__collapse": true
+      },
+      "id": "f3f423f4-d22c-4bb7-83dc-7dadef3332c5"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 1 A",
+        "__collapse": true
+      },
+      "id": "0315c6a9-f7b5-4026-b854-e0249160bebc"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 14
+          },
+          "valueB": {
+            "type": "number",
+            "value": 15
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 5
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "21"
+        },
+        "__collapse": true
+      },
+      "id": "0fca1be9-0a2b-4778-8cb1-e5f8ccf2362e"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "level 2 A\nhigh jump",
+        "__collapse": true
+      },
+      "id": "083eef9a-ceb2-4efb-bc2f-e860c7db98d8"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "02030bae-89e2-40f1-b9da-581e681571a6",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$variable[V2]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 14
+          },
+          "valueB": {
+            "type": "number",
+            "value": 15
+          }
+        },
+        "$variable[V3]$": {
+          "type": "or",
+          "valueA": {
+            "type": "number",
+            "value": 7
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "$variable[V4]$": {
+          "type": "number",
+          "value": 4
+        },
+        "$variable[V5]$": {
+          "type": "variable",
+          "value": "17"
+        },
+        "$variable[V6]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V7]$": {
+          "type": "variable",
+          "value": "21"
+        },
+        "__collapse": false
+      },
+      "id": "19997c2f-0ae9-44e6-bebb-f14ef4fee7d5"
+    }
+  ]
+}

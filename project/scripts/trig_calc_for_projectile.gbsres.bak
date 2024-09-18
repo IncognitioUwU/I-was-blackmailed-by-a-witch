@@ -1,0 +1,105 @@
+{
+  "_resourceType": "script",
+  "id": "5a360a7d-eb10-47de-beb9-d9a8e4d1684b",
+  "name": "trig_calc_for_projectile",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "opposite",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "adjacent",
+      "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "hypotenuse",
+      "passByReference": true
+    },
+    "V3": {
+      "id": "V3",
+      "name": "angle?",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_23",
+  "script": [
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "V2",
+        "expression": "$V0$*$V0$+$V1$*$V1$"
+      },
+      "id": "b236a3dd-3397-4476-b083-1d426550b4bd"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V2",
+        "value": {
+          "type": "isqrt",
+          "value": {
+            "type": "variable",
+            "value": "V2"
+          }
+        }
+      },
+      "id": "b998c444-df11-4e17-b14f-6d666ef417ea"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "V3",
+        "expression": "$V0$/$V2$"
+      },
+      "id": "7254cd8f-6f8e-4a05-abfc-91d14596163b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V3",
+        "value": {
+          "type": "atan2",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "V1"
+          }
+        }
+      },
+      "id": "9a6cf6d4-ef60-4398-92bd-0b3c62ffd144"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "$V3$"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9ea2aadb-74eb-42ff-9987-13e58ac434ec"
+    }
+  ]
+}

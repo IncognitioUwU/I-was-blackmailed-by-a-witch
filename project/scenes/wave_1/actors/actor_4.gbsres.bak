@@ -1,0 +1,97 @@
+{
+  "_resourceType": "actor",
+  "id": "5417ec56-48fb-41b2-a529-e3321b85a213",
+  "_index": 4,
+  "symbol": "actor_5",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8132e903-71b5-4e9d-8432-63ad33aa174a",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 0.7,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": true,
+  "collisionGroup": "3",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$actor[1]$": "8edfec6a-60e7-43d5-8de9-c4eec3c5f08e",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "1bf03516-2b97-45eb-8d48-979ab8d76388"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "__collapse": true
+      },
+      "id": "0bd5ed1d-c4d7-4a5f-acf2-62897d0d6615"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "2369eec0-e348-4931-921f-f67a044d3146",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V2]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V3]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "03c9e03a-0720-4d09-bed0-b367fe1b3556"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "24e549ba-e2ab-46dc-91fe-b367fb08818b"
+    }
+  ]
+}

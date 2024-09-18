@@ -1,0 +1,54 @@
+{
+  "_resourceType": "script",
+  "id": "f10231eb-7742-49e5-af4d-5e944632cbdd",
+  "name": "enemy_zombie_script_2",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "random",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_0",
+  "script": [
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "V0",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "V0",
+        "value": "0",
+        "minValue": 3,
+        "maxValue": 20,
+        "clamp": false
+      },
+      "id": "85063ae7-1584-4073-8131-2a16d2b164f6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0",
+        "x": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "y": {
+          "type": "property",
+          "target": "0",
+          "property": "ypos"
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "ea85fe69-d901-423d-899c-ce5a266d458b"
+    }
+  ]
+}

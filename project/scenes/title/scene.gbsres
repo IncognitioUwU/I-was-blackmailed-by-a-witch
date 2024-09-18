@@ -1,0 +1,94 @@
+{
+  "_resourceType": "scene",
+  "id": "57378645-f61f-49d8-8986-9c1aaf09e41d",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "title",
+  "symbol": "scene_2",
+  "x": 60,
+  "y": 96,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "10",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "365edde9-f06c-4119-a9d6-32e82e568e43"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "23",
+        "value": {
+          "type": "number",
+          "value": 6400
+        }
+      },
+      "id": "47939946-e607-4219-90b1-5afeb0337802"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Condensed fonts set by edo999 \n(edo999.itch.io)"
+        ],
+        "avatarId": ""
+      },
+      "id": "1589ee24-bce8-4ba8-90a6-1850fb8900e6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "d73790ee-d12b-4d3c-b58c-1e18d6d61508"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "fd0e9858-a46b-4529-97aa-6e78575ef9b8"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3404d4a3-f58f-4a5c-bb65-96a6dfcaaddd",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "left",
+        "fadeSpeed": 2
+      },
+      "id": "cd9c01e5-45b3-4431-9b38-6ad61e0a3812"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

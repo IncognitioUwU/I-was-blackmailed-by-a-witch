@@ -1,0 +1,86 @@
+{
+  "_resourceType": "script",
+  "id": "1435bdfb-186e-4b58-b42a-263cdfb26c60",
+  "name": "music_samples_init",
+  "symbol": "script_17",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SET_MUSIC_ROUTINE",
+      "args": {
+        "routine": 0,
+        "__scriptTabs": "trigger"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "2a7c5474-4958-427a-a2a5-367febf2f37a",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "aada11d8-b6e6-4572-aa5b-ca51caccb74f"
+          }
+        ]
+      },
+      "id": "f3b66bf9-c283-4267-999c-adb68762ca04"
+    },
+    {
+      "command": "EVENT_SET_MUSIC_ROUTINE",
+      "args": {
+        "routine": 1,
+        "__scriptTabs": "trigger"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "ff342ce6-4caf-4374-9af2-4c85e38c0416",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "df79af57-64b9-4cfb-bf63-b7d6a5ccf4f5"
+          }
+        ]
+      },
+      "id": "6c848311-1813-4dfa-973a-0501be0418f1"
+    },
+    {
+      "command": "EVENT_SET_MUSIC_ROUTINE",
+      "args": {
+        "routine": 2,
+        "__scriptTabs": "trigger"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9cdf618b-f8cd-4c5d-89de-b9a81b1a48e8",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "92b52492-cadd-40f8-92c5-88256f5ec51a"
+          }
+        ]
+      },
+      "id": "a826b78e-ec4b-4025-8e2c-ff4f50fab44d"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "2a7c5474-4958-427a-a2a5-367febf2f37a",
+  "name": "snare.wav",
+  "symbol": "sound_snare_wav",
+  "filename": "snare.wav",
+  "type": "wav"
+}

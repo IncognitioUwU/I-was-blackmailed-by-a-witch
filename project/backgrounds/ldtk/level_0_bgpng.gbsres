@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "c6c151ee-a282-4567-ab2b-798d087df8ff",
+  "name": "ldtk/Level_0_bg.png",
+  "symbol": "bg_ldtk_level_0_bg_png",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 192,
+  "imageHeight": 144,
+  "filename": "ldtk/png/Level_0_bg.png",
+  "tileColors": "",
+  "autoColor": false
+}

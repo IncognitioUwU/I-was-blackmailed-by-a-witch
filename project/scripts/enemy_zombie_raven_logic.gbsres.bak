@@ -1,0 +1,136 @@
+{
+  "_resourceType": "script",
+  "id": "fd4b4ede-046c-4e4e-8001-fe21b9eb11f3",
+  "name": "enemy_zombie_raven_logic",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "random",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Variable B",
+      "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "Variable C",
+      "passByReference": true
+    },
+    "V3": {
+      "id": "V3",
+      "name": "Variable D",
+      "passByReference": true
+    },
+    "V4": {
+      "id": "V4",
+      "name": "Variable E",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_22",
+  "script": [
+    {
+      "command": "EVENT_RNG_SEED",
+      "args": {},
+      "id": "903eddfb-8e08-4d5b-98a9-c6cf3bc39fb3"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "V0",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "V0",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": 7,
+        "clamp": false
+      },
+      "id": "a8cac8af-80a9-4153-b982-66bcbe3a54c3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "5a360a7d-eb10-47de-beb9-d9a8e4d1684b",
+              "$variable[V2]$": {
+                "type": "number",
+                "value": 0
+              },
+              "$variable[V0]$": {
+                "type": "expression",
+                "value": "$V1$-$V2$"
+              },
+              "$variable[V1]$": {
+                "type": "expression",
+                "value": "$V3$-$V4$"
+              },
+              "$variable[V3]$": {
+                "type": "variable",
+                "value": "24"
+              }
+            },
+            "id": "06c63413-b0e2-4747-bd94-f538bb73411b"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "source",
+              "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+              "spriteStateId": "",
+              "actorId": "0",
+              "x": 0,
+              "y": 0,
+              "directionType": "anglevar",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ],
+              "__collapse": false
+            },
+            "id": "2955dd80-b97b-4711-b95b-ce474be06db6"
+          }
+        ]
+      },
+      "id": "34647f5b-211b-4285-b4a1-3da6a951380b"
+    }
+  ]
+}

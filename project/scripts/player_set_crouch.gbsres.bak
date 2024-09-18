@@ -1,0 +1,73 @@
+{
+  "_resourceType": "script",
+  "id": "f5c5a05a-1640-48cd-8483-b9e0309786f2",
+  "name": "player_set_crouch",
+  "symbol": "script_7",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "47444a60-3bff-44eb-8919-8fd19ebc38f6"
+      },
+      "id": "328cfa43-5830-4fd3-ab7e-c605ac8f30ae"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "false"
+        },
+        "__collapse": false
+      },
+      "id": "fcdd836d-2b51-48ce-939c-e6cdd28a7f17"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_walk_vel",
+        "value": {
+          "type": "expression",
+          "value": "($19$*49)(*229/9)-228"
+        }
+      },
+      "id": "17d73f84-6af3-49d3-af38-49dddaf42ce8"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_hold_grav",
+        "value": {
+          "type": "number",
+          "value": 7998
+        }
+      },
+      "id": "03ff211a-86bc-4e27-b95b-bc5acdec83bc"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_max_fall_vel",
+        "value": {
+          "type": "number",
+          "value": 23893
+        }
+      },
+      "id": "1592af9d-2c8b-4a6e-bef3-4bf70dcf40ff"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_grav",
+        "value": {
+          "type": "number",
+          "value": 7856
+        }
+      },
+      "id": "0c7b9f43-f7c0-4582-8080-d1ffc382f8c8"
+    }
+  ]
+}

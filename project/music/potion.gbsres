@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "7f242fa3-42c2-4abe-95b5-43ee80169d33",
+  "name": "potion",
+  "symbol": "song_potion",
+  "filename": "potion.uge",
+  "settings": {},
+  "type": "uge"
+}

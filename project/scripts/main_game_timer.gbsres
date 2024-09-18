@@ -1,0 +1,87 @@
+{
+  "_resourceType": "script",
+  "id": "8a9ad5b4-b4e1-48f1-a5e0-cad67d23f0aa",
+  "name": "main_game_timer",
+  "symbol": "script_14",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "timer"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "e3e15431-ab54-4038-aef7-ac67693f9924"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "13",
+        "__comment": false,
+        "__collapse": false
+      },
+      "id": "3858dff7-a53d-41b5-8e7f-8d3d596c70f2"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "0",
+        "frame": {
+          "type": "variable",
+          "value": "13"
+        },
+        "__collapse": false
+      },
+      "id": "f64e17dc-bf3a-4a55-b802-19ded92e95c0"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "13"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 30
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "3c219bda-b5c3-4f78-a217-1896cea5e8f7",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 0
+              },
+              "$variable[V1]$": {
+                "type": "number",
+                "value": 0
+              },
+              "$variable[V2]$": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "bab6caaf-bfde-49c6-b91f-3938ab6b2daf"
+          }
+        ],
+        "false": []
+      },
+      "id": "36f912cb-bca4-4367-8a82-a00c1d3a5dee"
+    }
+  ]
+}

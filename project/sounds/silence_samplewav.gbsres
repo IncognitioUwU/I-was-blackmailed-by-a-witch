@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "9cdf618b-f8cd-4c5d-89de-b9a81b1a48e8",
+  "name": "silence_sample.wav",
+  "symbol": "sound_silence_sample_wav",
+  "filename": "silence_sample.wav",
+  "type": "wav"
+}

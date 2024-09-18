@@ -1,0 +1,93 @@
+{
+  "_resourceType": "script",
+  "id": "fd4b4ede-046c-4e4e-8001-fe21b9eb11f3",
+  "name": "enemy_zombie_raven_logic",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "random",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_22",
+  "script": [
+    {
+      "command": "EVENT_RNG_SEED",
+      "args": {},
+      "id": "903eddfb-8e08-4d5b-98a9-c6cf3bc39fb3"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "V0",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "V0",
+        "value": "0",
+        "minValue": "0",
+        "maxValue": 7,
+        "clamp": false
+      },
+      "id": "a8cac8af-80a9-4153-b982-66bcbe3a54c3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "source",
+              "spriteSheetId": "ebdb273b-73d3-4b4c-9f98-016a32122e8a",
+              "spriteStateId": "",
+              "actorId": "0",
+              "x": 0,
+              "y": 0,
+              "directionType": "target",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 127,
+              "lifeTime": 1,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1"
+              ],
+              "__collapse": false
+            },
+            "id": "2955dd80-b97b-4711-b95b-ce474be06db6"
+          }
+        ]
+      },
+      "id": "34647f5b-211b-4285-b4a1-3da6a951380b"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "_resourceType": "script",
+  "id": "ae3262e5-2b13-41f6-9a17-2881a7f168bd",
+  "name": "player_float",
+  "symbol": "script_8",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "20"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "4"
+              },
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "20"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PLAYER_BOUNCE",
+                        "args": {
+                          "height": "low"
+                        },
+                        "id": "b250ea14-6d33-4a55-babd-94cd76fce326"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "20"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 2
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_PLAYER_BOUNCE",
+                              "args": {
+                                "height": "medium"
+                              },
+                              "id": "46fe4efc-3922-430b-af96-f93c20c060b7"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_PLAYER_BOUNCE",
+                              "args": {
+                                "height": "high"
+                              },
+                              "id": "db0ecea4-77dc-4577-a24d-4a37a276b0a0"
+                            }
+                          ]
+                        },
+                        "id": "8cd890cf-fddb-43bb-a68c-9a78afdc0fb3"
+                      }
+                    ]
+                  },
+                  "id": "d9d271ce-655d-4429-a1f7-fad71828455f"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "4",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "2b9e374e-717b-4220-9e54-f1e03a15a5bf"
+                }
+              ],
+              "false": []
+            },
+            "id": "486ac0eb-70b0-4fdc-b4f2-74eadd23f275"
+          }
+        ],
+        "false": []
+      },
+      "id": "a6d4dfea-cb30-44b1-84bd-bd6077ebfe57"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_max_fall_vel",
+        "value": {
+          "type": "expression",
+          "value": "4800/(3*$20$)-450"
+        }
+      },
+      "id": "1d0863d1-0839-4f5a-9e04-b798511f8508"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_grav",
+        "value": {
+          "type": "expression",
+          "value": "6110/(3*$20$)"
+        }
+      },
+      "id": "2c6a7ffb-b4ae-4ecd-acc8-71a0fe25d44f"
+    }
+  ]
+}

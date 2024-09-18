@@ -1,0 +1,21 @@
+{
+  "_resourceType": "font",
+  "id": "a0155e80-323c-4766-9bdf-ef9b952618f6",
+  "name": "Condensed",
+  "symbol": "font_condensed",
+  "width": 128,
+  "height": 112,
+  "filename": "condensed-font-pack/condensed.png",
+  "mapping": {
+    "﹩": 36,
+    "＄": 36,
+    "﹪": 37,
+    "％": 37,
+    "€": 128,
+    "‰": 137,
+    "Œ": 140,
+    "œ": 156,
+    "￡": 163,
+    "￥": 165
+  }
+}

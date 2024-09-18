@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "ff342ce6-4caf-4374-9af2-4c85e38c0416",
+  "name": "Hat.wav",
+  "symbol": "sound_hat_wav",
+  "filename": "Hat.wav",
+  "type": "wav"
+}

@@ -1,0 +1,160 @@
+{
+  "_resourceType": "script",
+  "id": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+  "name": "enemy_dies",
+  "symbol": "script_10",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "enemy_exp",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "enemy_health",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "self"
+    },
+    "1": {
+      "id": "1",
+      "name": "timer"
+    }
+  },
+  "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 5
+      },
+      "id": "ecdff002-02cb-493a-99b9-dd9396bdecb2"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "V1"
+      },
+      "id": "a1ba2ae2-ae41-410e-9fff-d7205eb27f9c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "8",
+              "operation": "add",
+              "other": "var",
+              "vectorY": "V0",
+              "value": "0",
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "e2cc5d09-7d7b-4d19-8b5c-53901f93d46b"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "9"
+            },
+            "id": "c2a8552d-2b09-44aa-b842-bf0a57ee662e"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "4f94cf04-a282-49a5-8516-968c96a55050"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
+                "value": 18
+              },
+              "y": {
+                "type": "number",
+                "value": 20
+              }
+            },
+            "id": "f759e0fa-0abd-48f6-9734-ddb39f88900d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "9"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "11"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "3c219bda-b5c3-4f78-a217-1896cea5e8f7",
+                    "$actor[0]$": "1",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "$variable[V1]$": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "$variable[V2]$": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "975bc7d8-3e3a-45f2-99a1-de02675b0b8a"
+                }
+              ],
+              "false": []
+            },
+            "id": "5e6af5c6-c5c2-492a-acc4-8194e83a02ba"
+          }
+        ],
+        "false": []
+      },
+      "id": "db56eb0d-0f50-4c0b-8ab0-b2b70ce00ba1"
+    }
+  ]
+}

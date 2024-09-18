@@ -1,0 +1,108 @@
+{
+  "_resourceType": "script",
+  "id": "a1176be9-36f4-4030-94b5-8c8e6d693d22",
+  "name": "player_jump",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_20",
+  "script": [
+    {
+      "command": "EVENT_RNG_SEED",
+      "args": {},
+      "id": "ae178039-0979-4be9-89b2-60f3b3ac2413"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "7b34118d-8c9d-48e6-9628-29dd82d78c31"
+            },
+            "id": "5b1502bc-52b9-4a35-ab08-114608e570cc"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+              "priority": "low",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 6
+            },
+            "id": "e53090d9-6495-4e13-983e-5a99100ac5c4"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ENGINE_FIELD_SET",
+                  "args": {
+                    "engineFieldKey": "plat_hold_grav",
+                    "value": {
+                      "type": "number",
+                      "value": 890
+                    }
+                  },
+                  "id": "4aca8f59-ddc5-44ff-918e-df667017ec02"
+                }
+              ],
+              "false": []
+            },
+            "id": "aa152d59-f369-4760-9a24-ac9477a8287f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": []
+            },
+            "id": "f1028f3c-2ef9-4a33-ab04-fa06624188a0"
+          }
+        ]
+      },
+      "id": "baaa1618-52a8-4bb3-bde8-5ee00fd69055"
+    }
+  ]
+}

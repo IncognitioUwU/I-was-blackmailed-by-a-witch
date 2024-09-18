@@ -1,0 +1,34 @@
+{
+  "_resourceType": "script",
+  "id": "2fbebae9-c547-477f-85c9-321f1876978f",
+  "name": "send_player_to_otherside_of_screen",
+  "symbol": "script_2",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "tile_to_send_to",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "units": "tiles"
+      },
+      "id": "5bfcb7dc-6bbf-4928-82f6-d3643acaa841"
+    }
+  ]
+}

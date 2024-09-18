@@ -1,0 +1,68 @@
+{
+  "_resourceType": "script",
+  "id": "21c56767-6c42-4a71-9154-d5b0ddecb275",
+  "name": "player_reset_levels",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_25",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d8bd7011-dcf7-44bc-b6e4-ee8361ff1af6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "18",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "c2c21ae7-b793-499d-94ca-4cd9f78a9383"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e289551b-cdf0-4a58-a8f3-c9600434262b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false
+      },
+      "id": "3f0333df-63a6-428a-a7f6-7fe83bd7d6e3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": false
+      },
+      "id": "f4ac3156-2648-4b34-9ae5-02614c80cffd"
+    }
+  ]
+}

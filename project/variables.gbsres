@@ -1,0 +1,375 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "angle_to_shoot",
+      "symbol": "var_angle_to_shoot"
+    },
+    {
+      "id": "1",
+      "name": "shake_intensity",
+      "symbol": "var_shake_intensity"
+    },
+    {
+      "id": "2",
+      "name": "player_standing",
+      "symbol": "var_player_standing"
+    },
+    {
+      "id": "3",
+      "name": "can_crouch",
+      "symbol": "var_can_crouch"
+    },
+    {
+      "id": "4",
+      "name": "can_bounce",
+      "symbol": "var_can_bounce"
+    },
+    {
+      "id": "5",
+      "name": "player_lives",
+      "symbol": "var_player_lives"
+    },
+    {
+      "id": "6",
+      "name": "player_credit",
+      "symbol": "var_player_credit"
+    },
+    {
+      "id": "7",
+      "name": "current_wave",
+      "symbol": "var_current_wave"
+    },
+    {
+      "id": "8",
+      "name": "player_exp",
+      "symbol": "var_player_exp"
+    },
+    {
+      "id": "9",
+      "name": "enemies_defeated",
+      "symbol": "var_enemies_defeated"
+    },
+    {
+      "id": "10",
+      "name": "player_level",
+      "symbol": "var_player_level"
+    },
+    {
+      "id": "11",
+      "name": "enemies_in_wave",
+      "symbol": "var_enemies_in_wave"
+    },
+    {
+      "id": "12",
+      "name": "button_B_level",
+      "symbol": "var_button_b_level"
+    },
+    {
+      "id": "13",
+      "name": "seconds_passed",
+      "symbol": "var_seconds_passed"
+    },
+    {
+      "id": "14",
+      "name": "exp_to_add",
+      "symbol": "var_exp_to_add"
+    },
+    {
+      "id": "15",
+      "name": "seconds_remaining_bonus",
+      "symbol": "var_seconds_remaining_bonus"
+    },
+    {
+      "id": "16",
+      "name": "seconds_remain",
+      "symbol": "var_seconds_remain"
+    },
+    {
+      "id": "17",
+      "name": "temp_credit",
+      "symbol": "var_temp_credit"
+    },
+    {
+      "id": "18",
+      "name": "button_L/R_level",
+      "symbol": "var_button_l_r_level"
+    },
+    {
+      "id": "19",
+      "name": "button_D_level",
+      "symbol": "var_button_d_level"
+    },
+    {
+      "id": "20",
+      "name": "button_U_Level",
+      "symbol": "var_button_u_level"
+    },
+    {
+      "id": "21",
+      "name": "button_A_level",
+      "symbol": "var_button_a_level"
+    },
+    {
+      "id": "22",
+      "name": "player_x",
+      "symbol": "var_player_x"
+    },
+    {
+      "id": "23",
+      "name": "player_walk_velocity",
+      "symbol": "var_player_walk_velocity"
+    },
+    {
+      "id": "24",
+      "name": "enemy_angle",
+      "symbol": "var_enemy_angle"
+    },
+    {
+      "id": "530b48f1-2248-4a23-aa8b-2964d45e52db__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to"
+    },
+    {
+      "id": "60438aa3-f9a9-4be7-953f-9504b3615276__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_0"
+    },
+    {
+      "id": "e1506dc7-91eb-402b-9b54-e5642417d79d__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_4"
+    },
+    {
+      "id": "c5a3433c-96c6-4bc3-aede-b93510370359__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_0"
+    },
+    {
+      "id": "02152664-d22b-4813-8aa2-2fcac7dff1b6__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_1"
+    },
+    {
+      "id": "fe6c46d3-429a-42a2-8958-695ce19862e4__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_2"
+    },
+    {
+      "id": "b695342d-774b-44e6-8bf6-c55a587d5b3b__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_3"
+    },
+    {
+      "id": "fa3088a0-349e-4c33-88b2-a91c77aba081__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1"
+    },
+    {
+      "id": "08e64372-30cd-43dc-861b-55e8c5744c9e__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_5"
+    },
+    {
+      "id": "6b8dbe6e-c3b2-4fbb-871f-bd414389e944__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_6"
+    },
+    {
+      "id": "599b6a2d-a27f-48df-958e-69e70a085a51__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_7"
+    },
+    {
+      "id": "e1506dc7-91eb-402b-9b54-e5642417d79d__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health"
+    },
+    {
+      "id": "ec2ec022-feeb-46b9-a361-289c51af343c__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_8"
+    },
+    {
+      "id": "ec2ec022-feeb-46b9-a361-289c51af343c__L1",
+      "name": "enemy1_health",
+      "symbol": "var_enemy1_health"
+    },
+    {
+      "id": "9c6b1bba-bbf7-4c32-8a5e-0f8212021abe__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_9"
+    },
+    {
+      "id": "9c6b1bba-bbf7-4c32-8a5e-0f8212021abe__L1",
+      "name": "enemy1_health",
+      "symbol": "var_enemy1_health_1"
+    },
+    {
+      "id": "185154c3-461f-4329-87f0-4d1edea23934__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_10"
+    },
+    {
+      "id": "185154c3-461f-4329-87f0-4d1edea23934__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_0"
+    },
+    {
+      "id": "d0fd171d-fe0b-4c36-b69f-155c2e7386cd__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_11"
+    },
+    {
+      "id": "d0fd171d-fe0b-4c36-b69f-155c2e7386cd__L1",
+      "name": "enemy1_health",
+      "symbol": "var_enemy1_health_3"
+    },
+    {
+      "id": "c5e11b0e-1db2-462d-8416-fd5378a697f0__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_19"
+    },
+    {
+      "id": "c5e11b0e-1db2-462d-8416-fd5378a697f0__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_1"
+    },
+    {
+      "id": "d2961434-d9a6-4a29-8351-961ff6599070__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_13"
+    },
+    {
+      "id": "d2961434-d9a6-4a29-8351-961ff6599070__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_2"
+    },
+    {
+      "id": "39035dc4-7134-4237-8d4c-2bcd7687c9bf__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_14"
+    },
+    {
+      "id": "39035dc4-7134-4237-8d4c-2bcd7687c9bf__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_3"
+    },
+    {
+      "id": "39035dc4-7134-4237-8d4c-2bcd7687c9bf__L2",
+      "name": "Local 2",
+      "symbol": "var_local_2"
+    },
+    {
+      "id": "369a2e3e-1d51-49b2-87be-64f6c5098224__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_15"
+    },
+    {
+      "id": "369a2e3e-1d51-49b2-87be-64f6c5098224__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_4"
+    },
+    {
+      "id": "ca87dcc7-bdb8-4556-8ed9-f51069f731b8__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_16"
+    },
+    {
+      "id": "ca87dcc7-bdb8-4556-8ed9-f51069f731b8__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_5"
+    },
+    {
+      "id": "d73f40f6-3663-4f6a-b929-b424ea423cfb__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_17"
+    },
+    {
+      "id": "d73f40f6-3663-4f6a-b929-b424ea423cfb__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_6"
+    },
+    {
+      "id": "8eae668a-cc37-41fa-8b50-88397ae5f4e7__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_18"
+    },
+    {
+      "id": "8eae668a-cc37-41fa-8b50-88397ae5f4e7__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_7"
+    },
+    {
+      "id": "46c86ace-e881-45cd-86bc-313214d61f99__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_12"
+    },
+    {
+      "id": "46c86ace-e881-45cd-86bc-313214d61f99__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_8"
+    },
+    {
+      "id": "94e5f03e-43d5-4335-a016-46698e7779f3__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_20"
+    },
+    {
+      "id": "94e5f03e-43d5-4335-a016-46698e7779f3__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_9"
+    },
+    {
+      "id": "5417ec56-48fb-41b2-a529-e3321b85a213__L0",
+      "name": "randnumber1",
+      "symbol": "var_randnumber1_21"
+    },
+    {
+      "id": "5417ec56-48fb-41b2-a529-e3321b85a213__L1",
+      "name": "enemy_health",
+      "symbol": "var_enemy_health_10"
+    },
+    {
+      "id": "c0112d51-d2b3-464f-abd7-bb4b98dde31b__L0",
+      "name": "health",
+      "symbol": "var_health"
+    },
+    {
+      "id": "c0112d51-d2b3-464f-abd7-bb4b98dde31b__L1",
+      "name": "random",
+      "symbol": "var_random"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L1",
+      "name": "random",
+      "symbol": "var_random_0"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L2",
+      "name": "enemy_pixel_x",
+      "symbol": "var_enemy_pixel_x"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L3",
+      "name": "enemy_pixel_y",
+      "symbol": "var_enemy_pixel_y"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L4",
+      "name": "player_pixel_x",
+      "symbol": "var_player_pixel_x"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L5",
+      "name": "player_pixel_y",
+      "symbol": "var_player_pixel_y_0"
+    },
+    {
+      "id": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f__L0",
+      "name": "health",
+      "symbol": "var_health_0"
+    }
+  ]
+}
