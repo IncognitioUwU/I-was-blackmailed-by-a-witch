@@ -3,20 +3,14 @@
   "id": "0902e445-3eb5-418f-9bde-2552c52ca280",
   "name": "calculate_score",
   "description": "",
-  "variables": {
-    "V0": {
-      "id": "V0",
-      "name": "Variable A",
-      "passByReference": true
-    }
-  },
+  "variables": {},
   "actors": {},
   "symbol": "script_26",
   "script": [
     {
       "command": "EVENT_VARIABLE_MATH_EVALUATE",
       "args": {
-        "variable": "V0",
+        "variable": "26",
         "expression": "100*$08$"
       },
       "id": "e40c628b-8a1e-4990-a6d3-28250e44aada"
@@ -45,8 +39,8 @@
           {
             "command": "EVENT_VARIABLE_MATH_EVALUATE",
             "args": {
-              "variable": "V0",
-              "expression": "$V0$+$10$"
+              "variable": "26",
+              "expression": "$26$+$10$*1000"
             },
             "id": "73bd941d-53da-4ca8-a4fc-03550b296071"
           }

@@ -1,0 +1,91 @@
+{
+  "_resourceType": "script",
+  "id": "869e67df-3d20-429b-af5c-de92ee487adf",
+  "name": "calculate_level_threshold",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "n",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "n^2",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_27",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V0",
+        "value": {
+          "type": "add",
+          "valueA": {
+            "type": "variable",
+            "value": "10"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "id": "e8ad6ffa-807d-4286-ab7b-59d159285dfd"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V1",
+        "value": {
+          "type": "mul",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "V0"
+          }
+        }
+      },
+      "id": "0187f070-07ef-4f75-89ab-e022a6e10c82"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "25",
+        "expression": "4*$V1$+$V0$"
+      },
+      "id": "43f19b7f-33f4-4b95-b3cd-7121125ae8a0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "n = $V0$\nthreshold = $25$"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "6715bb4b-1879-4129-836b-f6d918defe5b"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "_resourceType": "script",
+  "id": "8f2f0253-48af-4b55-aec8-722cbef6b6bf",
+  "name": "enemy_wizard_movement",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_28",
+  "script": []
+}

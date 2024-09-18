@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "a0007f2e-401d-484f-9959-a648c0ca96f4",
+  "id": "0853d881-bc1e-4cbc-9aad-25c05a02eb99",
   "name": "",
   "frame": 0,
   "animate": false,
@@ -19,6 +19,12 @@
       "args": {
         "$actor[1]$": "a9e167ed-00d6-47a8-b55d-11a379a8e6a2"
       }
+    },
+    "d4dee651-38b1-4b83-9c42-e2870d2e6b18": {
+      "id": "d4dee651-38b1-4b83-9c42-e2870d2e6b18",
+      "args": {
+        "$actor[1]$": "a9e167ed-00d6-47a8-b55d-11a379a8e6a2"
+      }
     }
   },
   "symbol": "actor_7",
@@ -28,7 +34,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 3,
+  "x": 6,
   "y": 11,
   "_index": 2
 }

@@ -1,0 +1,19 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0",
+  "name": "fire_wizard",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

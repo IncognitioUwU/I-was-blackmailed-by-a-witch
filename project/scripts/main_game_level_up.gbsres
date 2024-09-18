@@ -3,42 +3,60 @@
   "id": "e86acf4e-51ca-482b-88ab-69650e9a304a",
   "name": "main_game_level_up",
   "description": "",
-  "variables": {
-    "V0": {
-      "id": "V0",
-      "name": "current_xp",
-      "passByReference": true
-    },
-    "V1": {
-      "id": "V1",
-      "name": "level_threshold",
-      "passByReference": true
-    },
-    "V2": {
-      "id": "V2",
-      "name": "Variable C",
-      "passByReference": true
-    }
-  },
+  "variables": {},
   "actors": {},
   "symbol": "script_24",
   "script": [
     {
-      "command": "EVENT_SET_VALUE",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "variable": "V1",
-        "value": {
-          "type": "expression",
-          "value": "(4*(($V2$+1)*($V2$+1)))+($V2$+1) "
+        "customEventId": "869e67df-3d20-429b-af5c-de92ee487adf",
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
         }
       },
-      "id": "47f53088-4842-4bfa-99c8-f6a510b6c9d4"
+      "id": "23910024-610f-4c1b-9a39-78ca93fa9df6"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "25"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "10"
+            },
+            "id": "d4e758ec-95eb-44ec-815d-056d75f5dfdf"
+          }
+        ],
+        "false": []
+      },
+      "id": "d157bdb0-8601-4376-a500-dbbfa649e7dd"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "$V1$"
+          "You are $10$"
         ],
         "__section": "text",
         "avatarId": "",
@@ -57,139 +75,7 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "84382959-bf3b-4f15-9ddb-0f33f73abaa6"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "gte",
-          "valueA": {
-            "type": "variable",
-            "value": "V0"
-          },
-          "valueB": {
-            "type": "variable",
-            "value": "V1"
-          }
-        },
-        "__collapseElse": false
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_INC_VALUE",
-            "args": {
-              "variable": "10"
-            },
-            "id": "aacf409b-07d6-4802-ba54-ab729cf05384"
-          },
-          {
-            "command": "EVENT_INC_VALUE",
-            "args": {
-              "variable": "6"
-            },
-            "id": "749f0148-3bb0-4068-b858-500e412ea362"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Level Up\nYou are now Level $10$!",
-                "You now have $06$ credits.",
-                "Do you want to change your loadout?\n(your stats will be reset but you will also\nbe refunded all of your credits)"
-              ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 5,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
-            },
-            "id": "3e9fcf19-a8b7-491b-874c-6fb19284d878"
-          },
-          {
-            "command": "EVENT_CHOICE",
-            "args": {
-              "variable": "V1",
-              "trueText": "Yes",
-              "falseText": "No"
-            },
-            "id": "45d66fa3-6e8c-4c91-a122-3afcdf769f37"
-          },
-          {
-            "command": "EVENT_IF",
-            "args": {
-              "condition": {
-                "type": "variable",
-                "value": "V1"
-              },
-              "__collapseElse": false
-            },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_SWITCH_SCENE",
-                  "args": {
-                    "sceneId": "3404d4a3-f58f-4a5c-bb65-96a6dfcaaddd",
-                    "x": {
-                      "type": "number",
-                      "value": 9
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 11
-                    },
-                    "direction": "",
-                    "fadeSpeed": "2"
-                  },
-                  "id": "e6e68c5f-2339-45af-8bb8-fcfe19dfe490"
-                }
-              ],
-              "false": []
-            },
-            "id": "2c44426e-bcec-4179-af3b-ff0f1ae0a128"
-          }
-        ],
-        "false": [
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "You are currently level $10$!"
-              ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
-            },
-            "id": "45a4c45c-9ad4-497e-93d3-fd401229cc3e"
-          }
-        ]
-      },
-      "id": "7e551267-539c-48aa-9a59-795fdf2ed292"
+      "id": "4a042fbc-fbec-4216-aa76-d4afb4f75d41"
     }
   ]
 }
