@@ -14,11 +14,6 @@
       "id": "V1",
       "name": "Variable B",
       "passByReference": true
-    },
-    "V2": {
-      "id": "V2",
-      "name": "Variable C",
-      "passByReference": true
     }
   },
   "actors": {},
@@ -78,11 +73,15 @@
         "customEventId": "e86acf4e-51ca-482b-88ab-69650e9a304a",
         "$variable[V0]$": {
           "type": "variable",
-          "value": "V2"
+          "value": "8"
         },
         "$variable[V1]$": {
           "type": "variable",
           "value": "V1"
+        },
+        "$variable[V2]$": {
+          "type": "variable",
+          "value": "10"
         }
       },
       "id": "4c3edf71-218b-4654-b08b-71ec045d9ab9"

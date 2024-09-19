@@ -6,11 +6,133 @@
   "variables": {
     "V0": {
       "id": "V0",
-      "name": "n",
+      "name": "Variable A",
       "passByReference": true
     }
   },
   "actors": {},
   "symbol": "script_24",
-  "script": []
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "869e67df-3d20-429b-af5c-de92ee487adf",
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "23910024-610f-4c1b-9a39-78ca93fa9df6"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "25"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "10"
+            },
+            "id": "d4e758ec-95eb-44ec-815d-056d75f5dfdf"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "6"
+            },
+            "id": "2172463c-6992-4eaa-846a-326b7005cff1"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You are now level $10$!",
+                "You now have $06$ credits!",
+                "Would you like to go to the shop?\n(your loadout will be reset but you \nwill getyour credits refunded)"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4a042fbc-fbec-4216-aa76-d4afb4f75d41"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "V0",
+              "trueText": "Yes",
+              "falseText": "No"
+            },
+            "id": "f6d317fb-bae0-424d-b6d7-e0c7d0665000"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "V0"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "3404d4a3-f58f-4a5c-bb65-96a6dfcaaddd",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "05ff969b-b283-4dea-996f-f28117e1e921"
+                }
+              ],
+              "false": []
+            },
+            "id": "a6783c10-34c0-4719-8fc8-92208534124d"
+          }
+        ],
+        "false": []
+      },
+      "id": "d157bdb0-8601-4376-a500-dbbfa649e7dd"
+    }
+  ]
 }

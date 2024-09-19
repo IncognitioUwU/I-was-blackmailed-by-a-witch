@@ -6,14 +6,86 @@
   "animate": false,
   "spriteSheetId": "2beea243-9bc8-4d1e-91e4-f81ce834414d",
   "moveSpeed": 1,
-  "animSpeed": 15,
+  "animSpeed": 1,
   "paletteId": "",
   "persistent": false,
-  "collisionGroup": "",
-  "script": [],
-  "startScript": [],
-  "updateScript": [],
+  "collisionGroup": "3",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "b91b5010-f62d-48a4-b451-22d8dcf29aff"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "d9f7097a-07ee-4af1-ab72-47164815fb2b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "4a433015-804a-46ce-8c5a-229d73cad7dc"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8f2f0253-48af-4b55-aec8-722cbef6b6bf",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L2"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L3"
+        }
+      },
+      "id": "5ea344bf-9bf9-4235-a414-c0ebc589c9c0"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
-  "hit3Script": []
+  "hit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$actor[1]$": "$self$"
+      },
+      "id": "e1c03a73-a619-4ea9-afb4-191d77788509"
+    }
+  ]
 }

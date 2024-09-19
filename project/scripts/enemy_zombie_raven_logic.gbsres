@@ -131,7 +131,7 @@
             "command": "EVENT_LAUNCH_PROJECTILE",
             "args": {
               "__section": "projectile",
-              "spriteSheetId": "ebdb273b-73d3-4b4c-9f98-016a32122e8a",
+              "spriteSheetId": "c159be02-27f4-40ce-b380-6c512f8e9774",
               "spriteStateId": "",
               "actorId": "0",
               "x": 0,
@@ -148,7 +148,7 @@
               "lifeTime": 4,
               "loopAnim": true,
               "destroyOnHit": true,
-              "collisionGroup": "3",
+              "collisionGroup": "2",
               "collisionMask": [
                 "player"
               ],

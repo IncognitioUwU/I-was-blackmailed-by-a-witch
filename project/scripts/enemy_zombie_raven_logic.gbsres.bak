@@ -86,9 +86,17 @@
                 "value": 11
               },
               "moveType": "vertical",
-              "useCollisions": true
+              "useCollisions": false
             },
             "id": "c46eb476-5578-4e4b-a59c-b15600e96dd6"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 5,
+              "frames": 30
+            },
+            "id": "f918e9a4-8f8f-45b4-954f-ccd4309b74db"
           },
           {
             "command": "EVENT_ACTOR_MOVE_TO",
@@ -104,7 +112,7 @@
                 "value": "V1"
               },
               "moveType": "vertical",
-              "useCollisions": true
+              "useCollisions": false
             },
             "id": "c223c97b-3a2a-411a-8b97-648b6095989d"
           }
@@ -123,7 +131,7 @@
             "command": "EVENT_LAUNCH_PROJECTILE",
             "args": {
               "__section": "projectile",
-              "spriteSheetId": "ebdb273b-73d3-4b4c-9f98-016a32122e8a",
+              "spriteSheetId": "c159be02-27f4-40ce-b380-6c512f8e9774",
               "spriteStateId": "",
               "actorId": "0",
               "x": 0,

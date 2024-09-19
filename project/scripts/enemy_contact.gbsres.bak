@@ -128,6 +128,13 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "0902e445-3eb5-418f-9bde-2552c52ca280"
+                  },
+                  "id": "8858543a-5710-42a2-aa59-2be31b9005ef"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "57378645-f61f-49d8-8986-9c1aaf09e41d",

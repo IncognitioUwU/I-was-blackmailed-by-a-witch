@@ -11,7 +11,7 @@
       "command": "EVENT_VARIABLE_MATH_EVALUATE",
       "args": {
         "variable": "26",
-        "expression": "100*$08$"
+        "expression": "$08$"
       },
       "id": "e40c628b-8a1e-4990-a6d3-28250e44aada"
     },
@@ -40,7 +40,7 @@
             "command": "EVENT_VARIABLE_MATH_EVALUATE",
             "args": {
               "variable": "26",
-              "expression": "$26$+$10$*1000"
+              "expression": "$26$+$10$*10"
             },
             "id": "73bd941d-53da-4ca8-a4fc-03550b296071"
           }
@@ -53,7 +53,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Your score is $26$"
+          "Your score is $26$00"
         ],
         "__section": "text",
         "avatarId": "",

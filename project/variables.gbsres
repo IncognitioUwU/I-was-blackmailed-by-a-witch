@@ -4,7 +4,7 @@
     {
       "id": "0",
       "name": "angle_to_shoot",
-      "symbol": "var_angle_to_shoot"
+      "symbol": "var_angle_to_shoot_0"
     },
     {
       "id": "1",
@@ -130,6 +130,11 @@
       "id": "25",
       "name": "player_level_threshold",
       "symbol": "var_player_level_threshold"
+    },
+    {
+      "id": "26",
+      "name": "player_score",
+      "symbol": "var_player_score"
     },
     {
       "id": "530b48f1-2248-4a23-aa8b-2964d45e52db__L0",
@@ -387,9 +392,34 @@
       "symbol": "var_tile_to_send_to_2"
     },
     {
-      "id": "26",
-      "name": "player_score",
-      "symbol": "var_player_score"
+      "id": "01d0d10c-e24a-45fb-9837-b6f32561a7ea__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_3"
+    },
+    {
+      "id": "49c14d35-8410-4fbc-93ef-19e030cddcdd__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_4"
+    },
+    {
+      "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0__L0",
+      "name": "xp",
+      "symbol": "var_xp"
+    },
+    {
+      "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0__L1",
+      "name": "health",
+      "symbol": "var_health_1"
+    },
+    {
+      "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0__L2",
+      "name": "random",
+      "symbol": "var_random_1"
+    },
+    {
+      "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0__L3",
+      "name": "tile_to_move_to",
+      "symbol": "var_tile_to_move_to"
     }
   ]
 }

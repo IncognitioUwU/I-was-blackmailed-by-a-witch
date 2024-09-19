@@ -139,21 +139,15 @@
             "children": {
               "true": [
                 {
-                  "command": "EVENT_SWITCH_SCENE",
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
-                    "sceneId": "1a32753b-2390-4caf-8456-e4463c7b318c",
-                    "x": {
-                      "type": "number",
-                      "value": 11
-                    },
-                    "y": {
-                      "type": "number",
-                      "value": 11
-                    },
-                    "direction": "left",
-                    "fadeSpeed": "2"
+                    "customEventId": "8a6d6e34-0809-4df6-88cc-05298dfa1b58",
+                    "$variable[V0]$": {
+                      "type": "expression",
+                      "value": "$07$+1"
+                    }
                   },
-                  "id": "a94574a7-d8b5-4fbe-a18e-f430f61bbbda"
+                  "id": "7e96300b-3fb6-4ce4-979b-6a87160f9bea"
                 }
               ],
               "false": [

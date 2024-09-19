@@ -1,0 +1,77 @@
+{
+  "_resourceType": "script",
+  "id": "6bf991bd-dacc-4036-838e-96ad1acdc189",
+  "name": "debug_set_player_to_max",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_29",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "number",
+          "value": 99
+        }
+      },
+      "id": "8e0f1d6d-e1bb-468f-a75a-18e6a4253ecf"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "18",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "145e37d5-f2f3-4541-aa42-6c2aa5661f69"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "19",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "afed4f96-6c1b-4e06-98eb-f66f1033b9da"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "9bc724c1-2d9e-4e16-a630-f322f8796f1b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "44eb338b-50c5-4ba2-9e67-f9842ed4fcf2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "1e20fb59-2c92-4ca6-9590-91d95c2805af"
+    }
+  ]
+}
