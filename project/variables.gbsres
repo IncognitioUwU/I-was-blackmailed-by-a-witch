@@ -420,6 +420,11 @@
       "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0__L3",
       "name": "tile_to_move_to",
       "symbol": "var_tile_to_move_to"
+    },
+    {
+      "id": "27",
+      "name": "high_score",
+      "symbol": "var_high_score"
     }
   ]
 }

@@ -11,7 +11,7 @@
       "command": "EVENT_VARIABLE_MATH_EVALUATE",
       "args": {
         "variable": "26",
-        "expression": "100*$08$"
+        "expression": "$08$"
       },
       "id": "e40c628b-8a1e-4990-a6d3-28250e44aada"
     },
@@ -40,9 +40,32 @@
             "command": "EVENT_VARIABLE_MATH_EVALUATE",
             "args": {
               "variable": "26",
-              "expression": "$26$+$10$*1000"
+              "expression": "$26$+$10$*10"
             },
             "id": "73bd941d-53da-4ca8-a4fc-03550b296071"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "27",
+              "value": {
+                "type": "variable",
+                "value": "26"
+              }
+            },
+            "id": "bd8cb597-3358-4bdb-a0a4-7617117c8314"
+          },
+          {
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0,
+              "__scriptTabs": "save"
+            },
+            "children": {
+              "true": [],
+              "load": []
+            },
+            "id": "0ae41215-7583-4ed0-a6b1-22f989de8de1"
           }
         ],
         "false": []
@@ -53,7 +76,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Your score is $26$"
+          "Your score is $26$00"
         ],
         "__section": "text",
         "avatarId": "",
