@@ -19,7 +19,7 @@
             "command": "EVENT_SOUND_PLAY_EFFECT",
             "args": {
               "type": "2a7c5474-4958-427a-a2a5-367febf2f37a",
-              "priority": "medium",
+              "priority": "high",
               "pitch": 4,
               "frequency": 200,
               "duration": 0.5,
@@ -43,8 +43,8 @@
           {
             "command": "EVENT_SOUND_PLAY_EFFECT",
             "args": {
-              "type": "ff342ce6-4caf-4374-9af2-4c85e38c0416",
-              "priority": "medium",
+              "type": "84c7f416-bbd3-426a-8bf8-41ce6ae31c6e",
+              "priority": "high",
               "pitch": 4,
               "frequency": 200,
               "duration": 0.5,

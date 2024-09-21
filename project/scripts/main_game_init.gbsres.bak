@@ -14,6 +14,11 @@
       "id": "V1",
       "name": "enemies_in_wave",
       "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "track_to_play",
+      "passByReference": true
     }
   },
   "actors": {},
@@ -34,8 +39,8 @@
       "args": {
         "customEventId": "e16e5bd7-44b5-410c-9c26-feb280048195",
         "$variable[V0]$": {
-          "type": "number",
-          "value": 1
+          "type": "variable",
+          "value": "V2"
         }
       },
       "id": "01f85ade-4f16-439f-b7c2-d021c4d37fde"
@@ -107,7 +112,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -115,6 +120,20 @@
             "command": "EVENT_RNG_SEED",
             "args": {},
             "id": "0da10796-575b-44b7-ad14-f7cf4b7bc76a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "7b34118d-8c9d-48e6-9628-29dd82d78c31"
+            },
+            "id": "1fe6f505-94c8-42cb-9f1a-b8916bc5a529"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "64ae550d-ff4c-4e43-bc4c-e9255f92fb97"
+            },
+            "id": "7a43340f-2b41-4396-8bcd-04a1e22988ba"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",

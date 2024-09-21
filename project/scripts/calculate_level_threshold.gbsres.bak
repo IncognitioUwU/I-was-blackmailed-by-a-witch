@@ -58,7 +58,7 @@
       "command": "EVENT_VARIABLE_MATH_EVALUATE",
       "args": {
         "variable": "25",
-        "expression": "3*$V1$+$V0$-1"
+        "expression": "$V1$+$V0$-1"
       },
       "id": "43f19b7f-33f4-4b95-b3cd-7121125ae8a0"
     },

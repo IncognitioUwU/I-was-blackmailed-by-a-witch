@@ -34,7 +34,7 @@
         "variable": "L0",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 5
         }
       },
       "id": "d9f7097a-07ee-4af1-ab72-47164815fb2b"
@@ -45,7 +45,7 @@
         "variable": "L1",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 5
         }
       },
       "id": "4a433015-804a-46ce-8c5a-229d73cad7dc"

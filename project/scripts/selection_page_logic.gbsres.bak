@@ -159,13 +159,13 @@
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
                               "args": {
-                                "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+                                "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
                                 "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.5,
                                 "wait": true,
-                                "effect": 6
+                                "effect": 10
                               },
                               "id": "7400f668-562c-4427-93d5-d57d0561f3d1"
                             },
@@ -195,7 +195,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "You have \n$06$ credits"
+                                  "You have \n$17$ credits"
                                 ],
                                 "__section": "text",
                                 "avatarId": "",
@@ -233,13 +233,13 @@
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
                               "args": {
-                                "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+                                "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
                                 "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.5,
                                 "wait": true,
-                                "effect": 3
+                                "effect": 28
                               },
                               "id": "e15cd802-2d61-4b8a-94df-c5e623e85443"
                             },

@@ -13,6 +13,16 @@
   },
   "script": [
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "28",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "f16eb8e9-ecd6-412e-998b-772cb02a4e95"
+    },
+    {
       "command": "EVENT_WAIT",
       "args": {
         "time": 1,

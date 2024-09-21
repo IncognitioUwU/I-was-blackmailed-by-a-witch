@@ -64,7 +64,7 @@
                   "value": 2
                 }
               },
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true": [

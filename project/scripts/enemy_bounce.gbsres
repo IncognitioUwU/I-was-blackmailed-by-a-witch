@@ -45,7 +45,7 @@
         "otherActorId": "0",
         "__collapseElse": false,
         "__comment": false,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -265,6 +265,19 @@
         "__collapse": true
       },
       "id": "6f959806-8402-484f-80b4-7c14110e0d93"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 31
+      },
+      "id": "c60d9ea0-c345-41d4-b7a8-408ce4544bc3"
     }
   ]
 }

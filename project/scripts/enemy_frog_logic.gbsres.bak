@@ -17,15 +17,6 @@
   "symbol": "script_3",
   "script": [
     {
-      "command": "EVENT_WAIT",
-      "args": {
-        "time": 3.5,
-        "frames": 3,
-        "units": "frames"
-      },
-      "id": "17a8e6fa-736c-4895-a7eb-252e5bbde331"
-    },
-    {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "4bf90388-3469-46fb-aa18-aca89a8d0d3e",

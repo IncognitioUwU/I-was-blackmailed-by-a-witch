@@ -88,6 +88,19 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 24
+                  },
+                  "id": "d5860b11-38b1-4645-89f6-e6511e821b69"
+                },
+                {
                   "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
                     "customEventId": "1435bdfb-186e-4b58-b42a-263cdfb26c60"
@@ -159,13 +172,13 @@
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
                               "args": {
-                                "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+                                "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
                                 "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.5,
                                 "wait": true,
-                                "effect": 6
+                                "effect": 10
                               },
                               "id": "7400f668-562c-4427-93d5-d57d0561f3d1"
                             },
@@ -233,13 +246,13 @@
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
                               "args": {
-                                "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+                                "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
                                 "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.5,
                                 "wait": true,
-                                "effect": 3
+                                "effect": 28
                               },
                               "id": "e15cd802-2d61-4b8a-94df-c5e623e85443"
                             },

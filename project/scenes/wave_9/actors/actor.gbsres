@@ -1,0 +1,182 @@
+{
+  "_resourceType": "actor",
+  "id": "27d76e23-230c-449a-99a1-2b660087f4c0",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bb38fa5b-45eb-4898-8100-150eb383ee9a",
+  "prefabId": "7aec859b-940d-444b-b99e-a091221a4c16",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "3",
+  "prefabScriptOverrides": {
+    "8a9ba374-e72c-4029-82d4-e32bed7ebfce": {
+      "id": "8a9ba374-e72c-4029-82d4-e32bed7ebfce",
+      "args": {
+        "vectorX": "L1",
+        "other": "rnd",
+        "minValue": 12,
+        "maxValue": 45
+      }
+    },
+    "c31822e5-34fa-491a-92a7-fe2280fd5a4c": {
+      "id": "c31822e5-34fa-491a-92a7-fe2280fd5a4c",
+      "args": {
+        "to": {
+          "type": "number",
+          "value": 2
+        }
+      }
+    },
+    "514e794c-06f3-4bac-b264-8a2384a59476": {
+      "id": "514e794c-06f3-4bac-b264-8a2384a59476",
+      "args": {
+        "variable": "L0",
+        "to": {
+          "type": "variable",
+          "value": "L1"
+        }
+      }
+    },
+    "abffe405-5715-40fa-9d36-78c8a2e48f3e": {
+      "id": "abffe405-5715-40fa-9d36-78c8a2e48f3e",
+      "args": {
+        "$actor[1]$": "28e0d3a0-3a79-4b09-b2a3-f9378cb93c43"
+      }
+    }
+  },
+  "symbol": "actor_42",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L4"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L3"
+        },
+        "$actor[1]$": "28e0d3a0-3a79-4b09-b2a3-f9378cb93c43"
+      },
+      "id": "0ee0e2e3-cfb1-4d89-aad7-214a748d68d3"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L4",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "8114af08-7de1-4283-9e66-e0a3aec43fcf"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L3",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "60903a14-add9-4deb-8a1d-4bfafead99c2"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "L0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 4
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "c78b82fc-26af-48b6-b264-c7cb8be79ffc",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "98546338-780c-4596-8ad2-d43863233094"
+          }
+        ]
+      },
+      "id": "a5f71ee8-6ffc-4538-8a35-eaabb129c8a2"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L1",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 2,
+        "maxValue": 20,
+        "clamp": false
+      },
+      "id": "9c0d58e0-735e-4015-8771-ba2cc4c68f4e"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L2",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 1,
+        "maxValue": 11,
+        "clamp": false
+      },
+      "id": "534578bb-81f7-4823-ad63-5911d62e63bd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "y": {
+          "type": "variable",
+          "value": "L2"
+        }
+      },
+      "id": "2eb83408-c0b4-4b31-9434-f78b96a22430"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 17,
+  "y": 4,
+  "_index": 1
+}

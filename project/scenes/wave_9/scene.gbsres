@@ -1,0 +1,70 @@
+{
+  "_resourceType": "scene",
+  "id": "3e53725a-ccae-4b9e-b98b-d9b5d72015c0",
+  "_index": 11,
+  "name": "wave 9",
+  "backgroundId": "ca7829dc-6972-4b8a-8f79-42c7c3fef6cb",
+  "tilesetId": "",
+  "width": 24,
+  "height": 18,
+  "type": "PLATFORM",
+  "paletteIds": [
+    ""
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00120+0f48+00!0f!0014+0f!002+0f!0014+0f!002+0f!0014+0f!00!",
+  "autoFadeSpeed": null,
+  "symbol": "scene_12",
+  "x": 832,
+  "y": 440,
+  "playerSpriteSheetId": "13820021-636a-4829-b0f1-5267cffb0591",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "6bf991bd-dacc-4036-838e-96ad1acdc189",
+        "__comment": false
+      },
+      "id": "09a58c20-3d3b-4c3e-ba34-f4b167bfed75"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a73c9773-f64e-45d9-a670-b0732b23693c",
+        "__collapse": false,
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 9
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 5
+        },
+        "$variable[V2]$": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "9bef268e-a87f-494c-81e7-c1175e34fa6b"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "39e4315c-b181-45aa-9f65-0231068d7cc7"
+      },
+      "id": "357eb4f3-b3cf-4807-bae4-b951c47176ca"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "39e4315c-b181-45aa-9f65-0231068d7cc7"
+      },
+      "id": "96aadac6-47b9-4e63-b5a9-4308ef2a865d"
+    }
+  ],
+  "playerHit3Script": []
+}

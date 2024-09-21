@@ -15,7 +15,7 @@
     {
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
       "args": {
-        "actorId": "$self$",
+        "actorId": "0",
         "speed": 3
       },
       "id": "0f3e0053-3c60-4a6f-a5ec-57adb47dbb5d"

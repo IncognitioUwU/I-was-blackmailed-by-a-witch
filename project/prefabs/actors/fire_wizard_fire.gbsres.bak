@@ -10,13 +10,7 @@
   "paletteId": "",
   "persistent": false,
   "collisionGroup": "3",
-  "script": [
-    {
-      "command": "EVENT_CALL_CUSTOM_EVENT",
-      "args": {},
-      "id": "98241ef6-338e-408c-92f7-d8a587a73cc6"
-    }
-  ],
+  "script": [],
   "startScript": [
     {
       "command": "EVENT_ACTOR_DEACTIVATE",

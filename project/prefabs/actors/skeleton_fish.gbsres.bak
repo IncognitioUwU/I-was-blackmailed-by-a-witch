@@ -1,0 +1,94 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "0a20821a-1021-4e16-ace7-e183ea696321",
+  "name": "skeleton_fish",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9141a1ef-5644-4e51-8bdb-3b108faa1131",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "3",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "900b442f-67ce-4083-a1dd-1e669fdecb17"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "557ee0df-9a5b-4ae8-b5f8-6ee73d915f2e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "5095d5b2-5d75-4422-b49f-614f14f46ea5"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4bf90388-3469-46fb-aa18-aca89a8d0d3e",
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 0
+        },
+        "$variable[V2]$": {
+          "type": "number",
+          "value": -16
+        },
+        "$variable[V3]$": {
+          "type": "number",
+          "value": 32
+        }
+      },
+      "id": "89f212de-d3c2-4d2f-a4a9-8962af4cd0db"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "9428fe02-baa1-44a2-8706-9712be1cd3f2"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": []
+}

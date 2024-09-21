@@ -30,7 +30,7 @@
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "V0",
-        "choices": 4,
+        "choices": 6,
         "__collapseCase0": false,
         "value0": 1,
         "__collapseCase1": false,
@@ -110,8 +110,28 @@
             "id": "4e171e8b-2045-41f6-a7c1-09666b740b37"
           }
         ],
-        "true4": [],
-        "true5": [],
+        "true4": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "0",
+              "speed": 5,
+              "__collapse": true
+            },
+            "id": "c7418bb8-ec49-42eb-baf6-db5af6a3dcce"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "0",
+              "speed": 6,
+              "__collapse": false
+            },
+            "id": "02c090a6-ac2f-475c-9092-9c8b15589abd"
+          }
+        ],
         "true6": [],
         "true7": [],
         "true8": [],
@@ -122,7 +142,17 @@
         "true13": [],
         "true14": [],
         "true15": [],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "0",
+              "speed": 7,
+              "__collapse": false
+            },
+            "id": "a800ca08-2408-4133-bda3-df593798b113"
+          }
+        ]
       },
       "id": "639fb01c-f9c4-4ba0-8af2-6a041b344368"
     }

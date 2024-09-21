@@ -1,7 +1,7 @@
 {
   "_resourceType": "settings",
-  "worldScrollX": 137.03529357910156,
-  "worldScrollY": 127.24705505371094,
+  "worldScrollX": 0,
+  "worldScrollY": 177.69412231445312,
   "zoom": 91.40625,
   "navigatorSplitSizes": [
     30,
@@ -11,7 +11,7 @@
   ],
   "showNavigator": true,
   "showCollisions": true,
-  "showConnections": "selected",
+  "showConnections": false,
   "previewAsMono": false,
   "showCollisionSlopeTiles": false,
   "favoriteEvents": [

@@ -40,13 +40,13 @@
           {
             "command": "EVENT_SOUND_PLAY_EFFECT",
             "args": {
-              "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+              "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
               "priority": "low",
               "pitch": 4,
               "frequency": 200,
               "duration": 0.5,
               "wait": true,
-              "effect": 6
+              "effect": 4
             },
             "id": "e53090d9-6495-4e13-983e-5a99100ac5c4"
           },

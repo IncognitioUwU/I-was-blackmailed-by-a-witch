@@ -1,0 +1,181 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "7aec859b-940d-444b-b99e-a091221a4c16",
+  "name": "ghost",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bb38fa5b-45eb-4898-8100-150eb383ee9a",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": true,
+  "collisionGroup": "3",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L4"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L3"
+        },
+        "$actor[1]$": "28e0d3a0-3a79-4b09-b2a3-f9378cb93c43"
+      },
+      "id": "734991cd-5771-4556-a48a-cc051c6d9fe9",
+      "children": {}
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L4",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "58f2eca0-817d-452a-8778-af1cae41af73",
+      "children": {}
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L3",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "abeda161-caca-4e68-9da3-2d7951bfbd4a",
+      "children": {}
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 8,
+        "units": "frames",
+        "__collapse": false
+      },
+      "id": "ab270162-8092-4cd9-b8e0-843c2ec65d81"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L1",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 2,
+        "maxValue": 20,
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "c0a5d49c-b90c-4443-a729-ebd33a0c00cc",
+      "children": {}
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "L2",
+        "operation": "set",
+        "other": "rnd",
+        "vectorY": "L0",
+        "value": "0",
+        "minValue": 1,
+        "maxValue": 11,
+        "clamp": false,
+        "__collapse": true
+      },
+      "id": "e79a580a-1e84-454f-ad5a-46d04b1724cc",
+      "children": {}
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "y": {
+          "type": "variable",
+          "value": "L2"
+        },
+        "__collapse": true
+      },
+      "id": "05f00fba-bf23-4ba5-a497-002362c82bdb",
+      "children": {}
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 33
+      },
+      "id": "124df6da-eeb5-45b4-9f93-be575c13a7a6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c78b82fc-26af-48b6-b264-c7cb8be79ffc",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "553efe86-0677-40ee-be25-3cbe7b25d85d",
+      "children": {}
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 62,
+        "units": "frames",
+        "__collapse": false
+      },
+      "id": "dafaf319-4508-40b3-8465-0c225dc178a3"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {},
+      "id": "bd248fc0-c730-4090-bae3-4c07a9955e57"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L4"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L3"
+        }
+      },
+      "id": "abffe405-5715-40fa-9d36-78c8a2e48f3e"
+    }
+  ]
+}

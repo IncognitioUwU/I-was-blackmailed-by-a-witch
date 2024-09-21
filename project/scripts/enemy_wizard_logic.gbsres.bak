@@ -145,7 +145,7 @@
               "variable": "V1",
               "value": {
                 "type": "property",
-                "target": "0",
+                "target": "player",
                 "property": "xpos"
               }
             },

@@ -159,7 +159,20 @@
             "id": "5e6af5c6-c5c2-492a-acc4-8194e83a02ba"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "c78b82fc-26af-48b6-b264-c7cb8be79ffc",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 0
+              },
+              "$actor[0]$": "0"
+            },
+            "id": "687cd1f0-4590-4cfc-afd4-45c86c84eeff"
+          }
+        ]
       },
       "id": "db56eb0d-0f50-4c0b-8ab0-b2b70ce00ba1"
     }

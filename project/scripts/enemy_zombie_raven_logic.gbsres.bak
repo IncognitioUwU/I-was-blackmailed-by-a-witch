@@ -128,6 +128,19 @@
             "id": "868f21f7-a510-45fb-a7c7-02382145c1d2"
           },
           {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 33
+            },
+            "id": "06d887bc-f903-491b-b851-43ab7b23af9a"
+          },
+          {
             "command": "EVENT_LAUNCH_PROJECTILE",
             "args": {
               "__section": "projectile",
@@ -148,7 +161,7 @@
               "lifeTime": 4,
               "loopAnim": true,
               "destroyOnHit": true,
-              "collisionGroup": "3",
+              "collisionGroup": "2",
               "collisionMask": [
                 "player"
               ],

@@ -37,7 +37,7 @@
           "type": "number",
           "value": 24
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "6520d00d-3d51-4cfc-b1bf-242b86028d49"
     },

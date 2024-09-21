@@ -5,22 +5,13 @@
   "symbol": "script_13",
   "description": "",
   "variables": {},
-  "actors": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
   "script": [
-    {
-      "command": "EVENT_CALL_CUSTOM_EVENT",
-      "args": {
-        "customEventId": "7b34118d-8c9d-48e6-9628-29dd82d78c31"
-      },
-      "id": "14ef7ebf-b72e-47da-a2ae-8dc895777690"
-    },
-    {
-      "command": "EVENT_CALL_CUSTOM_EVENT",
-      "args": {
-        "customEventId": "64ae550d-ff4c-4e43-bc4c-e9255f92fb97"
-      },
-      "id": "ca202cb0-c994-4d41-bfe8-3bfddac4b396"
-    },
     {
       "command": "EVENT_SWITCH",
       "args": {
@@ -80,7 +71,7 @@
             "args": {
               "spriteSheetId": "a9059d9c-c5fc-48f7-b2ef-1de9314aefdf",
               "spriteStateId": "",
-              "actorId": "$self$",
+              "actorId": "0",
               "x": 0,
               "y": 0,
               "directionType": "anglevar",
@@ -100,7 +91,8 @@
                 "1",
                 "2",
                 "3"
-              ]
+              ],
+              "__section": "source"
             },
             "id": "553aa6c6-6ec4-40fc-8fe5-f9fdceea0584"
           },
@@ -133,7 +125,7 @@
             "args": {
               "spriteSheetId": "a9059d9c-c5fc-48f7-b2ef-1de9314aefdf",
               "spriteStateId": "",
-              "actorId": "$self$",
+              "actorId": "0",
               "x": 0,
               "y": 0,
               "directionType": "anglevar",
@@ -153,7 +145,8 @@
                 "1",
                 "2",
                 "3"
-              ]
+              ],
+              "__section": "source"
             },
             "id": "dfc27d1a-18ba-4ada-9824-93e0d3a10bf1"
           },
@@ -186,7 +179,7 @@
             "args": {
               "spriteSheetId": "a9059d9c-c5fc-48f7-b2ef-1de9314aefdf",
               "spriteStateId": "",
-              "actorId": "$self$",
+              "actorId": "0",
               "x": 0,
               "y": 0,
               "directionType": "anglevar",
@@ -206,7 +199,8 @@
                 "1",
                 "2",
                 "3"
-              ]
+              ],
+              "__section": "source"
             },
             "id": "5c9330d0-e2d6-4df7-a0f4-6ecaa4ffeb4f"
           },
@@ -214,7 +208,7 @@
             "command": "EVENT_WAIT",
             "args": {
               "time": 0.5,
-              "frames": 15,
+              "frames": 20,
               "units": "frames"
             },
             "id": "8eb51812-86cd-4171-a926-b59c6c96bb97"

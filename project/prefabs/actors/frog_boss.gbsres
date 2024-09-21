@@ -69,7 +69,24 @@
       "id": "bbba82b8-7717-4dda-9521-d33239754c56"
     }
   ],
-  "hit1Script": [],
+  "hit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$actor[1]$": "$self$"
+      },
+      "id": "8beb693f-e42e-4275-b495-d1b894f819c9"
+    }
+  ],
   "hit2Script": [],
   "hit3Script": [
     {

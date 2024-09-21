@@ -149,12 +149,26 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You have \n$17$ credits left.",
-                "Are you happy\nWith your loadout?"
+                "Are you happy\nWith your loadout"
               ],
-              "avatarId": ""
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
             },
-            "id": "70584b70-da05-4291-83f8-2091462a98d4"
+            "id": "6d9a7e60-5963-4452-98f4-b8049295a62c"
           },
           {
             "command": "EVENT_CHOICE",

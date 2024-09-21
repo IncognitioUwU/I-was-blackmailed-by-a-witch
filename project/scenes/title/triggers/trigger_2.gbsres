@@ -53,9 +53,9 @@
             "args": {
               "variable": "L0",
               "items": 3,
-              "option1": "5 Credits",
-              "option2": "7 Credits",
-              "option3": "9 Credits",
+              "option1": "6 Credits",
+              "option2": "8 Credits",
+              "option3": "10 Credits",
               "option4": "",
               "option5": "",
               "option6": "",
@@ -305,6 +305,19 @@
               ]
             },
             "id": "2b09d534-1812-4540-88cc-5d622b211770"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 2
+            },
+            "id": "53b30325-f925-4b4a-b14f-59894d3a6c16"
           }
         ]
       },

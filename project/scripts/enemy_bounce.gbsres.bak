@@ -45,7 +45,7 @@
         "otherActorId": "0",
         "__collapseElse": false,
         "__comment": false,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -198,25 +198,6 @@
         ]
       },
       "id": "4f62c6a2-6483-4aec-a8f3-7a14d0a9726a"
-    },
-    {
-      "command": "EVENT_ACTOR_MOVE_TO",
-      "args": {
-        "actorId": "0",
-        "x": {
-          "type": "property",
-          "target": "0",
-          "property": "xpos"
-        },
-        "y": {
-          "type": "number",
-          "value": 11
-        },
-        "moveType": "horizontal",
-        "useCollisions": false,
-        "__collapse": true
-      },
-      "id": "0b9fa54a-ba3f-4b32-a2ac-92be5d237343"
     },
     {
       "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",

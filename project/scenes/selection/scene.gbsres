@@ -146,22 +146,11 @@
             "id": "893e81a8-968c-459e-9d7a-4ef6414a8745"
           },
           {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "You have \n$17$ credits \nleft.",
-                "Are you happy\nWith your\nSelection?"
-              ],
-              "avatarId": ""
-            },
-            "id": "70584b70-da05-4291-83f8-2091462a98d4"
-          },
-          {
             "command": "EVENT_CHOICE",
             "args": {
               "variable": "T0",
-              "trueText": "Yes",
-              "falseText": "No"
+              "trueText": "Ready ",
+              "falseText": "Adjust Loadout"
             },
             "id": "03147092-8a30-44c7-a15d-b0ca163265be"
           },

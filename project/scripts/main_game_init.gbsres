@@ -112,7 +112,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -120,6 +120,20 @@
             "command": "EVENT_RNG_SEED",
             "args": {},
             "id": "0da10796-575b-44b7-ad14-f7cf4b7bc76a"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "7b34118d-8c9d-48e6-9628-29dd82d78c31"
+            },
+            "id": "1fe6f505-94c8-42cb-9f1a-b8916bc5a529"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "64ae550d-ff4c-4e43-bc4c-e9255f92fb97"
+            },
+            "id": "7a43340f-2b41-4396-8bcd-04a1e22988ba"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -200,7 +214,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -223,12 +237,12 @@
               "text": [
                 " PAUSED\n\nXP = $08$"
               ],
-              "__section": "text",
+              "__section": "layout",
               "avatarId": "",
               "minHeight": 18,
               "maxHeight": 7,
-              "textX": 8,
-              "textY": 8,
+              "textX": 6,
+              "textY": 7,
               "textHeight": 5,
               "position": "bottom",
               "clearPrevious": true,

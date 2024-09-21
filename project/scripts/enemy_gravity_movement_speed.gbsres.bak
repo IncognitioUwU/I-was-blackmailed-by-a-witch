@@ -30,7 +30,7 @@
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "V0",
-        "choices": 4,
+        "choices": 6,
         "__collapseCase0": false,
         "value0": 1,
         "__collapseCase1": false,
@@ -71,7 +71,7 @@
             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
             "args": {
               "actorId": "0",
-              "speed": 4,
+              "speed": 1,
               "__collapse": false
             },
             "id": "4fe8e497-c889-4609-833f-030a592ff37b"
@@ -82,7 +82,7 @@
             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
             "args": {
               "actorId": "0",
-              "speed": 3,
+              "speed": 2,
               "__collapse": false
             },
             "id": "1a4c73d1-c32a-4d33-831b-40755ad3fc7a"
@@ -93,7 +93,7 @@
             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
             "args": {
               "actorId": "0",
-              "speed": 2,
+              "speed": 3,
               "__collapse": false
             },
             "id": "03a4067c-0c48-412f-802a-9d54ab3e67b2"
@@ -104,14 +104,34 @@
             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
             "args": {
               "actorId": "0",
-              "speed": 1,
+              "speed": 4,
               "__collapse": false
             },
             "id": "4e171e8b-2045-41f6-a7c1-09666b740b37"
           }
         ],
-        "true4": [],
-        "true5": [],
+        "true4": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "0",
+              "speed": 5,
+              "__collapse": true
+            },
+            "id": "c7418bb8-ec49-42eb-baf6-db5af6a3dcce"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "0",
+              "speed": 6,
+              "__collapse": false
+            },
+            "id": "02c090a6-ac2f-475c-9092-9c8b15589abd"
+          }
+        ],
         "true6": [],
         "true7": [],
         "true8": [],

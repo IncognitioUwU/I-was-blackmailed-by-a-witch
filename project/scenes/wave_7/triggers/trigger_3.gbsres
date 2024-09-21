@@ -1,0 +1,59 @@
+{
+  "_resourceType": "trigger",
+  "id": "f61eb570-8368-49c3-b0bd-169d74e27dbb",
+  "name": "",
+  "prefabId": "",
+  "_index": 2,
+  "symbol": "trigger_26",
+  "x": 0,
+  "y": 11,
+  "width": 24,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "4",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "2f91085f-8450-413d-8cbe-c9d0c35b7122"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "value": {
+          "type": "number",
+          "value": 21773
+        },
+        "engineFieldKey": "plat_max_fall_vel"
+      },
+      "id": "34cedaf5-80c6-4ade-ba4e-4f95d256f21e"
+    },
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "plat_grav",
+        "value": {
+          "type": "number",
+          "value": 3055
+        }
+      },
+      "id": "718f3e1c-1409-4cdc-862c-07f1823d284a"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "4",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "966678d4-d7c7-4d8c-a3cf-b68ba2917c62"
+    }
+  ]
+}

@@ -48,22 +48,13 @@
             "id": "8a2f6f51-53f9-4832-a7d9-67185fa45b80"
           },
           {
-            "command": "EVENT_MENU",
+            "command": "EVENT_CHOICE",
             "args": {
               "variable": "L0",
-              "items": 2,
-              "option1": "Yes",
-              "option2": "No",
-              "option3": "",
-              "option4": "",
-              "option5": "",
-              "option6": "",
-              "option7": "",
-              "option8": "",
-              "cancelOnB": false,
-              "layout": "dialogue"
+              "trueText": "Yes",
+              "falseText": "No"
             },
-            "id": "52e42ba2-7ec6-487a-a437-cad9c30fa388"
+            "id": "8004f067-39e3-4ea3-a42a-0aaeef017226"
           },
           {
             "command": "EVENT_IF",

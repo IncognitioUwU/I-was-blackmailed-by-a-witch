@@ -70,6 +70,19 @@
       "id": "15924aa3-8b6e-4aba-9dab-2eb247c32a41"
     },
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "9c6e3c82-8b17-4f43-959a-768ac4ef63b8",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 23
+      },
+      "id": "47c79cc5-bbb8-4a8f-85b1-a69d3d7bd0de"
+    },
+    {
       "command": "EVENT_ACTOR_ACTIVATE",
       "args": {
         "actorId": "1"

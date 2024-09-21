@@ -136,7 +136,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You are currently Level $10$"
+                "You are currently \nLevel $10$"
               ],
               "__section": "text",
               "avatarId": "",

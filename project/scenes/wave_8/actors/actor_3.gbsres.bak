@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "ea380bdc-d825-4826-aa58-d8ab45983662",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "182ef5b2-42b3-4f35-a71c-2e45b35cae2f",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "bdf9221e-1740-4a20-8da6-26cd8950c1b3": {
+      "id": "bdf9221e-1740-4a20-8da6-26cd8950c1b3",
+      "args": {
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 3
+        },
+        "$actor[1]$": "7a911972-c05c-4d06-a3a9-e28d04aea9e2"
+      }
+    },
+    "2f4ea683-9c1c-49df-92e6-e0dc9abfb10b": {
+      "id": "2f4ea683-9c1c-49df-92e6-e0dc9abfb10b",
+      "args": {
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 3
+        },
+        "$actor[1]$": "7a911972-c05c-4d06-a3a9-e28d04aea9e2"
+      }
+    },
+    "6b2baf26-d44f-442f-8878-f2de3a0777dc": {
+      "id": "6b2baf26-d44f-442f-8878-f2de3a0777dc",
+      "args": {
+        "$actor[1]$": "7a911972-c05c-4d06-a3a9-e28d04aea9e2"
+      }
+    }
+  },
+  "symbol": "actor_38",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 14,
+  "y": 8,
+  "_index": 4
+}
