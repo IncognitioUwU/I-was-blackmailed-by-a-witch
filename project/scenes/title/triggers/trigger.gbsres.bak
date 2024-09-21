@@ -25,7 +25,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "High Score is $27$"
+                "High Score is $27$00"
               ],
               "__section": "text",
               "avatarId": "",

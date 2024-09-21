@@ -4,17 +4,18 @@
   "name": "",
   "prefabId": "",
   "x": 8,
-  "y": 15,
+  "y": 16,
   "symbol": "trigger_10",
   "prefabScriptOverrides": {},
   "width": 12,
-  "height": 2,
+  "height": 1,
   "script": [
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
-          "a"
+          "a",
+          "start"
         ],
         "override": true,
         "__scriptTabs": "press"
@@ -43,7 +44,7 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "2458e8e7-a0e3-442b-9660-985c14ac299d"
           },
@@ -52,9 +53,9 @@
             "args": {
               "variable": "L0",
               "items": 3,
-              "option1": "4 Credits",
-              "option2": "6 Credits",
-              "option3": "8 Credits",
+              "option1": "6 Credits",
+              "option2": "8 Credits",
+              "option3": "10 Credits",
               "option4": "",
               "option5": "",
               "option6": "",
@@ -62,7 +63,7 @@
               "option8": "",
               "cancelOnB": false,
               "layout": "dialogue",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "b38ba059-5497-455e-8205-544ba7484327"
           },
@@ -185,7 +186,7 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "2d7c7470-1c0e-4ef7-a303-5f755607c38a"
           },
@@ -204,7 +205,7 @@
               "option8": "",
               "cancelOnB": false,
               "layout": "dialogue",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "cd972f52-e9b3-486f-b116-50505588177d"
           },
@@ -310,6 +311,17 @@
       "id": "d910df7f-0e4d-47b3-9cc9-1a42dd75b987"
     }
   ],
-  "leaveScript": [],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start",
+          "a"
+        ]
+      },
+      "id": "a3f202b7-2c89-4601-8076-f35282897121"
+    }
+  ],
   "_index": 1
 }

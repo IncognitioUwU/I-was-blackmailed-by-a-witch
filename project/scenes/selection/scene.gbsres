@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "3404d4a3-f58f-4a5c-bb65-96a6dfcaaddd",
   "_index": 2,
-  "type": "TOPDOWN",
+  "type": "ADVENTURE",
   "name": "selection",
   "symbol": "scene_3",
   "x": 240,
@@ -16,9 +16,42 @@
   "autoFadeSpeed": 1,
   "script": [
     {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "6f8c78fe-3b06-45bb-9738-43b6b7df9b02"
+      },
+      "id": "fa43c8e4-4eeb-461d-b442-21f03714f1e6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have \n$06$ credits"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "40700bff-16dd-43d4-944b-515a41758a1a"
+    },
+    {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "customEventId": "21c56767-6c42-4a71-9154-d5b0ddecb275"
+        "customEventId": "21c56767-6c42-4a71-9154-d5b0ddecb275",
+        "__collapse": false
       },
       "id": "47836539-3b99-4d55-b0ec-a3b5bf178b4d"
     },
@@ -41,7 +74,8 @@
           "b"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -67,7 +101,8 @@
           "select"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -75,10 +110,11 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "L/R Level = $18$\nUp Level = $20$\nDown Level = $19$\nB Level = $12$\nA Level = $21$",
-                "Remaining Credits = $17$"
+                "L/R Level = $18$\nUp Level = $20$\nDown Level = $19$\nB Level = $12$\nA Level = $21$"
               ],
-              "avatarId": ""
+              "avatarId": "",
+              "__section": "text",
+              "minHeight": 4
             },
             "id": "243b0043-919c-4157-ae5d-9b830fdd7de8"
           }
@@ -93,7 +129,8 @@
           "start"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -112,7 +149,8 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Are you happy with your loadout?\nYou have $17$ remaining."
+                "You have \n$17$ credits \nleft.",
+                "Are you happy\nWith your\nSelection?"
               ],
               "avatarId": ""
             },
@@ -170,13 +208,6 @@
         ]
       },
       "id": "4dee728c-71ed-46d7-aeb6-5a48b7c97aef"
-    },
-    {
-      "command": "EVENT_MUSIC_PLAY",
-      "args": {
-        "musicId": "6f8c78fe-3b06-45bb-9738-43b6b7df9b02"
-      },
-      "id": "fa43c8e4-4eeb-461d-b442-21f03714f1e6"
     }
   ],
   "playerHit1Script": [],

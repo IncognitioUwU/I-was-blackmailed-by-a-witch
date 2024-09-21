@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8211eaa1-c54d-4b7e-8034-0175af8f86a1",
+  "name": "B01YUR",
+  "symbol": "bg_b01yur",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "B01YUR.png",
+  "tileColors": "",
+  "autoColor": false
+}

@@ -91,8 +91,8 @@
               "targetActorId": "$self$",
               "initialOffset": 0,
               "speed": 2,
-              "animSpeed": 0,
-              "lifeTime": 0.5,
+              "animSpeed": 3,
+              "lifeTime": 0.4,
               "loopAnim": true,
               "destroyOnHit": true,
               "collisionGroup": "3",
@@ -108,7 +108,7 @@
             "command": "EVENT_WAIT",
             "args": {
               "time": 0.5,
-              "frames": 40,
+              "frames": 50,
               "units": "frames"
             },
             "id": "3412d713-079a-4574-b471-448604b6bfa4"
@@ -143,9 +143,9 @@
               "angleVariable": "0",
               "targetActorId": "$self$",
               "initialOffset": 0,
-              "speed": 2.5,
-              "animSpeed": 0,
-              "lifeTime": 1.5,
+              "speed": 2,
+              "animSpeed": 1,
+              "lifeTime": 0.7,
               "loopAnim": true,
               "destroyOnHit": true,
               "collisionGroup": "3",
@@ -161,7 +161,7 @@
             "command": "EVENT_WAIT",
             "args": {
               "time": 0.5,
-              "frames": 20,
+              "frames": 35,
               "units": "frames"
             },
             "id": "946ad54f-1957-4838-a4e1-90e0a0ca2574"
@@ -196,9 +196,9 @@
               "angleVariable": "0",
               "targetActorId": "$self$",
               "initialOffset": 0,
-              "speed": 2.5,
+              "speed": 2.875,
               "animSpeed": 0,
-              "lifeTime": 3,
+              "lifeTime": 1.4,
               "loopAnim": true,
               "destroyOnHit": true,
               "collisionGroup": "3",
@@ -214,7 +214,7 @@
             "command": "EVENT_WAIT",
             "args": {
               "time": 0.5,
-              "frames": 5,
+              "frames": 15,
               "units": "frames"
             },
             "id": "8eb51812-86cd-4171-a926-b59c6c96bb97"

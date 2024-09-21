@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "57378645-f61f-49d8-8986-9c1aaf09e41d",
   "_index": 1,
-  "type": "POINTNCLICK",
+  "type": "ADVENTURE",
   "name": "title",
   "symbol": "scene_2",
   "x": 64,
@@ -15,6 +15,22 @@
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "8f3dc954-c66d-479c-a6eb-aee14bf185e4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "94e1c4fa-3802-4d74-b463-782a16c9e3db"
+    },
     {
       "command": "EVENT_SET_VALUE",
       "args": {
@@ -38,22 +54,12 @@
       "id": "47939946-e607-4219-90b1-5afeb0337802"
     },
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Condensed fonts set by edo999 \n(edo999.itch.io)"
-        ],
-        "avatarId": ""
-      },
-      "id": "1589ee24-bce8-4ba8-90a6-1850fb8900e6"
-    },
-    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "5",
         "value": {
           "type": "number",
-          "value": 3
+          "value": 5
         }
       },
       "id": "d73790ee-d12b-4d3c-b58c-1e18d6d61508"
@@ -64,7 +70,7 @@
         "variable": "6",
         "value": {
           "type": "number",
-          "value": 6
+          "value": 8
         }
       },
       "id": "fd0e9858-a46b-4529-97aa-6e78575ef9b8"

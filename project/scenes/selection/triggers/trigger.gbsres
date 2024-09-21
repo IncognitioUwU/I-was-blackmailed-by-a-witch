@@ -1,0 +1,251 @@
+{
+  "_resourceType": "trigger",
+  "id": "8dd2a6da-1dbf-4161-bda0-99d90226d11f",
+  "name": "",
+  "prefabId": "",
+  "x": 4,
+  "y": 11,
+  "symbol": "trigger_11",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Are you sure you \nwant to reset?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8a2f6f51-53f9-4832-a7d9-67185fa45b80"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Yes",
+              "falseText": "No"
+            },
+            "id": "8004f067-39e3-4ea3-a42a-0aaeef017226"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "21c56767-6c42-4a71-9154-d5b0ddecb275"
+                  },
+                  "id": "7df4aabc-0b64-413a-a45d-040193704b9e"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "17",
+                    "value": {
+                      "type": "variable",
+                      "value": "6"
+                    }
+                  },
+                  "id": "a2ccdba6-543c-451c-811f-cb1de473bcd9"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You have been \nrefunded your \ncredits"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "c6839728-a690-4961-99c0-dff03e36b6e1"
+                }
+              ],
+              "false": []
+            },
+            "id": "38e6982b-95d2-4739-a16f-7c6387ba23ed"
+          }
+        ]
+      },
+      "id": "761f9e51-eea6-430e-abee-06513763c9fa"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start",
+          "a"
+        ]
+      },
+      "id": "1af67327-5b26-4a65-953e-a6dee0844231"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a",
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "100adf11-67a9-4994-a55e-68dc87908b90",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "T0"
+              }
+            },
+            "id": "4cb96323-d3d2-4f3a-a083-d1f055249136"
+          }
+        ]
+      },
+      "id": "d9b84137-f8d7-4535-ad92-ac4d31474e9a"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUTE_CHANNEL",
+            "args": {
+              "channels": [
+                2,
+                1,
+                0
+              ]
+            },
+            "id": "a90b9c62-e561-4fa2-8f8f-b4b4aa57d78e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Are you happy with your loadout?\nYou have $17$ remaining."
+              ],
+              "avatarId": ""
+            },
+            "id": "17322308-f856-4f41-b833-0e636203e0ec"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "T0",
+              "trueText": "Yes",
+              "falseText": "No"
+            },
+            "id": "9f7925ed-9c53-465b-8fe4-c6e34668a0d8"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "T0"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "8a6d6e34-0809-4df6-88cc-05298dfa1b58",
+                    "$variable[V0]$": {
+                      "type": "expression",
+                      "value": "$07$+1"
+                    }
+                  },
+                  "id": "861b9e57-da36-48c0-9cff-f64533199665"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_MUTE_CHANNEL",
+                  "args": {
+                    "channels": [
+                      2,
+                      1,
+                      0,
+                      3
+                    ]
+                  },
+                  "id": "820ecd90-8514-41c6-988e-683f9c1cca07"
+                }
+              ]
+            },
+            "id": "b9c83b99-87b5-41ef-8320-bbbc57b9edb1"
+          }
+        ]
+      },
+      "id": "c77372c2-bb27-43da-a607-23d80d60e29c"
+    }
+  ],
+  "_index": 0
+}

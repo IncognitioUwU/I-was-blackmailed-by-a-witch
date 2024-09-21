@@ -76,9 +76,8 @@
           "value": "L1"
         },
         "$variable[V1]$": {
-          "type": "property",
-          "target": "$self$",
-          "property": "ypos"
+          "type": "number",
+          "value": 0
         }
       },
       "id": "da666765-f720-4160-982e-f01d8aafb6ab"

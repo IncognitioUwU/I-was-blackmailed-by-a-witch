@@ -26,6 +26,17 @@
       "id": "54a689a7-80d8-403d-9fc4-180a65ebd88a"
     },
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V0",
+        "value": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "3f4279a7-e5e4-4457-ba2d-ad3b4e1edd56"
+    },
+    {
       "command": "EVENT_VARIABLE_MATH_EVALUATE",
       "args": {
         "variable": "V0",
@@ -56,16 +67,47 @@
       "id": "3f2908a6-7e23-40eb-945f-015895ff3a44"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_IF",
       "args": {
-        "text": [
-          "Wave $07$ cleared!\n$V0$ seconds remaining.",
-          "You have $08$XP\nYou have $$06$ credits\nYou have $05$ lives remaining"
-        ],
-        "avatarId": "",
-        "__collapse": false
+        "condition": {
+          "type": "variable",
+          "value": "28"
+        },
+        "__collapseElse": false
       },
-      "id": "8d8f69d9-cbfc-4eaa-8580-36c8e7863d63"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Boss defeated!\nWave $07$ cleared!",
+                "You have \n$08$XP\n\n",
+                "You have $05$ \nlives remaining"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "987d31da-21cc-40a0-af97-1d178953668d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Wave $07$ cleared!\n$V0$ seconds left",
+                "You have \n$08$XP\n\n",
+                "You have $05$ \nlives remaining"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "8d8f69d9-cbfc-4eaa-8580-36c8e7863d63"
+          }
+        ]
+      },
+      "id": "6c39a836-4526-4dbb-9252-e5d685e89051"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",

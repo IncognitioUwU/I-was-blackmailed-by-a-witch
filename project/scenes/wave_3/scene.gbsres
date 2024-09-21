@@ -47,7 +47,7 @@
         },
         "$variable[V1]$": {
           "type": "number",
-          "value": 4
+          "value": 3
         }
       },
       "id": "54669e8c-7b54-4a36-a4fb-111a0e318657"

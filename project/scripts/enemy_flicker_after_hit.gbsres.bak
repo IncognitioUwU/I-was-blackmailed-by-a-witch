@@ -1,0 +1,85 @@
+{
+  "_resourceType": "script",
+  "id": "c78b82fc-26af-48b6-b264-c7cb8be79ffc",
+  "name": "enemy_flicker_after_hit",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "i",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_32",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "0"
+      },
+      "id": "f91a03cd-d2af-4902-a109-04fd65b44844"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "V0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 20
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "eb76af6d-8f99-410d-8a1d-a0198d67a78b"
+          },
+          {
+            "command": "EVENT_IDLE",
+            "args": {},
+            "id": "de23d1da-e6c8-4a54-9e2d-92415bcfb5bb"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "535c3303-4682-437a-a3ec-304f7f617209"
+          },
+          {
+            "command": "EVENT_IDLE",
+            "args": {},
+            "id": "4a2372e5-21ea-4058-b594-fb4e8dab448c"
+          }
+        ]
+      },
+      "id": "600a1b88-2cf8-4760-a984-c5d6b194efc8"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+      "args": {
+        "actorId": "0"
+      },
+      "id": "db82e39c-59a1-4d3d-b17b-0c234b920af0"
+    }
+  ]
+}

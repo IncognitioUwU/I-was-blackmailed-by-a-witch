@@ -63,7 +63,8 @@
             "value": "V2"
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -194,10 +195,36 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
+                                  "You have \n$17$ credits"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "3679b8b1-e197-40ca-a48e-85c73e60b368"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
                                   "L/R level = $18$ "
                                 ],
                                 "avatarId": "",
-                                "__comment": true
+                                "__comment": true,
+                                "__collapse": false
                               },
                               "id": "6ffef9d3-74b3-4695-bf39-5d59e62feab1"
                             }
@@ -220,7 +247,7 @@
                               "command": "EVENT_TEXT",
                               "args": {
                                 "text": [
-                                  "You don't have enough credits"
+                                  "You don't have \nenough credits"
                                 ],
                                 "avatarId": ""
                               },

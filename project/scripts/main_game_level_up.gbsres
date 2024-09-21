@@ -64,9 +64,10 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You are now level $10$!",
-                "You now have $06$ credits!",
-                "Would you like to go to the shop?\n(your loadout will be reset but you \nwill getyour credits refunded)"
+                "You are now \nlevel $10$!",
+                "You now have \n$06$ credits!",
+                "Would you like to \ngo to the shop?",
+                "(your loadout will\nbe reset but you \nwill get\nyour \ncredits refunded)"
               ],
               "__section": "text",
               "avatarId": "",
@@ -135,7 +136,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You are currently Level $10$"
+                "You are currently \nLevel $10$"
               ],
               "__section": "text",
               "avatarId": "",

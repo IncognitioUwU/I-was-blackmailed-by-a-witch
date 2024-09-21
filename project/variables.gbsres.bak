@@ -137,6 +137,21 @@
       "symbol": "var_player_score"
     },
     {
+      "id": "27",
+      "name": "high_score",
+      "symbol": "var_high_score"
+    },
+    {
+      "id": "28",
+      "name": "no_timer",
+      "symbol": "var_no_timer"
+    },
+    {
+      "id": "29",
+      "name": "x",
+      "symbol": "var_x"
+    },
+    {
       "id": "530b48f1-2248-4a23-aa8b-2964d45e52db__L0",
       "name": "tile_to_send_to",
       "symbol": "var_tile_to_send_to"
@@ -420,6 +435,71 @@
       "id": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0__L3",
       "name": "tile_to_move_to",
       "symbol": "var_tile_to_move_to"
+    },
+    {
+      "id": "996b0811-fa3d-4480-a47e-226b298c29a9__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_5"
+    },
+    {
+      "id": "f3c8872b-aa99-40db-8218-5a10e9291fc9__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_6"
+    },
+    {
+      "id": "538cd829-ab24-438d-a4e2-989c3dc665fc__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_7"
+    },
+    {
+      "id": "17c440aa-fb04-46ba-9967-d2638c6387af__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_8"
+    },
+    {
+      "id": "8dd2a6da-1dbf-4161-bda0-99d90226d11f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "e64b49d1-5dbc-4604-8619-d2622e62f280__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_9"
+    },
+    {
+      "id": "24cf618c-5ce1-43fd-b256-f905b54f5d18__L0",
+      "name": "tile_to_send_to",
+      "symbol": "var_tile_to_send_to_10"
+    },
+    {
+      "id": "4f2817a4-2e18-4a95-8b6e-d66f8734da89__L0",
+      "name": "enemy_xp",
+      "symbol": "var_enemy_xp"
+    },
+    {
+      "id": "4f2817a4-2e18-4a95-8b6e-d66f8734da89__L1",
+      "name": "health",
+      "symbol": "var_health_2"
+    },
+    {
+      "id": "dbd1ee49-3c27-4e87-bc65-50a1aa184454__L2",
+      "name": "i",
+      "symbol": "var_i"
+    },
+    {
+      "id": "dbd1ee49-3c27-4e87-bc65-50a1aa184454__L0",
+      "name": "tounge_y",
+      "symbol": "var_tounge_y"
+    },
+    {
+      "id": "dbd1ee49-3c27-4e87-bc65-50a1aa184454__L3",
+      "name": "frog_y",
+      "symbol": "var_frog_y"
+    },
+    {
+      "id": "dbd1ee49-3c27-4e87-bc65-50a1aa184454__L1",
+      "name": "direction_to_move",
+      "symbol": "var_direction_to_move"
     }
   ]
 }

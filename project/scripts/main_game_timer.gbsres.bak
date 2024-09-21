@@ -70,6 +70,10 @@
               "$variable[V1]$": {
                 "type": "number",
                 "value": 0
+              },
+              "$variable[V2]$": {
+                "type": "number",
+                "value": 0
               }
             },
             "id": "bab6caaf-bfde-49c6-b91f-3938ab6b2daf"

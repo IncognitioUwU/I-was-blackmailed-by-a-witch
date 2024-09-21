@@ -58,7 +58,7 @@
       "command": "EVENT_VARIABLE_MATH_EVALUATE",
       "args": {
         "variable": "25",
-        "expression": "4*$V1$+$V0$"
+        "expression": "3*$V1$+$V0$-1"
       },
       "id": "43f19b7f-33f4-4b95-b3cd-7121125ae8a0"
     },
@@ -83,7 +83,9 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": false,
+        "__comment": true
       },
       "id": "6715bb4b-1879-4129-836b-f6d918defe5b"
     }

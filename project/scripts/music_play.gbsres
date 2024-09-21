@@ -53,15 +53,7 @@
         "__collapseElse": false
       },
       "children": {
-        "true0": [
-          {
-            "command": "EVENT_MUSIC_PLAY",
-            "args": {
-              "musicId": "f05b385a-58be-49d4-b91d-d71f9af7579b"
-            },
-            "id": "1a6c00a6-cf5a-4d45-adf6-265db2e6d6e5"
-          }
-        ],
+        "true0": [],
         "true1": [],
         "true2": [],
         "true3": [],
@@ -77,7 +69,15 @@
         "true13": [],
         "true14": [],
         "true15": [],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "c9f1babe-2a53-4d97-a434-ab7ebc8a9790"
+            },
+            "id": "1a6c00a6-cf5a-4d45-adf6-265db2e6d6e5"
+          }
+        ]
       },
       "id": "628e1a89-67f3-47ac-a54b-3fdd943639e7"
     }

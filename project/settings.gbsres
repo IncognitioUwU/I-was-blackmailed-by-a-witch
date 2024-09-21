@@ -1,7 +1,7 @@
 {
   "_resourceType": "settings",
-  "startSceneId": "57378645-f61f-49d8-8986-9c1aaf09e41d",
-  "startX": 11,
+  "startSceneId": "df730067-82fd-4af8-966a-fe09b91c13c5",
+  "startX": 9,
   "startY": 11,
   "startMoveSpeed": 1,
   "startAnimSpeed": 15,
@@ -32,7 +32,7 @@
   "defaultSpritePaletteId": "default-sprite",
   "defaultUIPaletteId": "default-ui",
   "playerPaletteId": "",
-  "defaultFontId": "a0155e80-323c-4766-9bdf-ef9b952618f6",
+  "defaultFontId": "4d6e567c-4828-45a2-8f07-efb5dd1008ce",
   "defaultCharacterEncoding": "",
   "defaultPlayerSprites": {
     "TOPDOWN": "581d34d0-9591-4e6e-a609-1d94f203b0cd",

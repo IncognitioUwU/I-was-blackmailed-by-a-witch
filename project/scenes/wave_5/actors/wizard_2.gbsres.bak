@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "87358384-598b-42a3-950b-7b568442ddc4",
+  "name": "wizard_2",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "9e0a9c32-1d8f-4c84-b9d9-888cfe4bc7e0",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "e1c03a73-a619-4ea9-afb4-191d77788509": {
+      "id": "e1c03a73-a619-4ea9-afb4-191d77788509",
+      "args": {
+        "$actor[1]$": "d881860d-047d-4600-9778-fb78d23e5c52"
+      }
+    },
+    "b91b5010-f62d-48a4-b451-22d8dcf29aff": {
+      "id": "b91b5010-f62d-48a4-b451-22d8dcf29aff",
+      "args": {
+        "$actor[1]$": "d881860d-047d-4600-9778-fb78d23e5c52"
+      }
+    },
+    "5ea344bf-9bf9-4235-a414-c0ebc589c9c0": {
+      "id": "5ea344bf-9bf9-4235-a414-c0ebc589c9c0",
+      "args": {
+        "$actor[1]$": "d53f6544-9491-43d0-b437-cc7442031a61"
+      }
+    },
+    "4a433015-804a-46ce-8c5a-229d73cad7dc": {
+      "id": "4a433015-804a-46ce-8c5a-229d73cad7dc",
+      "args": {
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      }
+    }
+  },
+  "symbol": "actor_22",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 4,
+  "y": 6,
+  "_index": 4
+}

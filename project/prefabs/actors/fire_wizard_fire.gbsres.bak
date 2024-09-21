@@ -5,12 +5,18 @@
   "frame": 0,
   "animate": false,
   "spriteSheetId": "b306eb09-b8c5-48ea-8362-ef4f3277a5e3",
-  "moveSpeed": 1,
-  "animSpeed": 127,
+  "moveSpeed": 0.8,
+  "animSpeed": 63,
   "paletteId": "",
   "persistent": false,
   "collisionGroup": "3",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {},
+      "id": "98241ef6-338e-408c-92f7-d8a587a73cc6"
+    }
+  ],
   "startScript": [
     {
       "command": "EVENT_ACTOR_DEACTIVATE",

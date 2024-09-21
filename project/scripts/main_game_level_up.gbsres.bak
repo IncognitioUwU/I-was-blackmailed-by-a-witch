@@ -42,7 +42,7 @@
             "value": "25"
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -64,9 +64,10 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You are now level $10$!",
-                "You now have $06$ credits!",
-                "Would you like to go to the shop?\n(your loadout will be reset but you \nwill getyour credits refunded)"
+                "You are now \nlevel $10$!",
+                "You now have \n$06$ credits!",
+                "Would you like to \ngo to the shop?",
+                "(your loadout will\nbe reset but you \nwill get\nyour \ncredits refunded)"
               ],
               "__section": "text",
               "avatarId": "",
@@ -130,7 +131,33 @@
             "id": "a6783c10-34c0-4719-8fc8-92208534124d"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You are currently Level $10$"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "1ad50a81-38ed-4abc-a4a6-1be994958082"
+          }
+        ]
       },
       "id": "d157bdb0-8601-4376-a500-dbbfa649e7dd"
     }

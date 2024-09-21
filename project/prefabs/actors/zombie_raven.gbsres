@@ -5,7 +5,7 @@
   "frame": 0,
   "animate": false,
   "spriteSheetId": "96385dfb-ee85-436d-a207-0713a785ce48",
-  "moveSpeed": 1,
+  "moveSpeed": 0.8,
   "animSpeed": 15,
   "paletteId": "",
   "persistent": false,

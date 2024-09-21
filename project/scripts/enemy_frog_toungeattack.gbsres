@@ -1,0 +1,97 @@
+{
+  "_resourceType": "script",
+  "id": "559f14f0-d71e-4c39-b068-91dbbf483640",
+  "name": "enemy_frog_toungeattack",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Self"
+    }
+  },
+  "symbol": "script_34",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "0",
+        "speed": 3
+      },
+      "id": "0f3e0053-3c60-4a6f-a5ec-57adb47dbb5d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "attack",
+        "loopAnim": false
+      },
+      "id": "4787a6c8-676e-4f37-963b-23816eb23021"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 70,
+        "units": "frames"
+      },
+      "id": "abd11f1d-041f-4109-814f-43201cf7c540"
+    },
+    {
+      "command": "EVENT_LAUNCH_PROJECTILE",
+      "args": {
+        "__section": "projectile",
+        "spriteSheetId": "9a895ce2-e47a-46e6-89e0-dd075b41f034",
+        "spriteStateId": "",
+        "actorId": "0",
+        "x": 0,
+        "y": 8,
+        "directionType": "actor",
+        "otherActorId": "0",
+        "direction": "left",
+        "angle": 0,
+        "angleVariable": "V0",
+        "targetActorId": "$self$",
+        "initialOffset": 20,
+        "speed": 0.4375,
+        "animSpeed": 0,
+        "lifeTime": 1.1,
+        "loopAnim": true,
+        "destroyOnHit": false,
+        "collisionGroup": "2",
+        "collisionMask": [
+          "player"
+        ]
+      },
+      "id": "2491e2f6-42aa-4b81-97e1-2eb71ceba291"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 3,
+        "units": "time",
+        "__collapse": true
+      },
+      "id": "68005441-f69f-4548-a1d0-9cd473135643"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "0",
+        "spriteStateId": "attack recoil",
+        "loopAnim": false
+      },
+      "id": "f11b2c5b-3dd4-4fdb-b390-2cc4ceed5e6c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "0",
+        "speed": 15
+      },
+      "id": "99957950-03cb-49ce-a02f-1d82c562da22"
+    }
+  ]
+}

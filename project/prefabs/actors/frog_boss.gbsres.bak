@@ -1,0 +1,92 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "4f2817a4-2e18-4a95-8b6e-d66f8734da89",
+  "name": "frog_boss",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a1473b4d-b8cb-4139-a044-ba889848543f",
+  "moveSpeed": 4.37,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "3",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e522f9f7-f11d-49f1-a488-e9acabf78fd9",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "$actor[1]$": "$self$"
+      },
+      "id": "c0100ef2-d21d-4740-adcb-9ccd9a7cd920"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "2535940d-9b53-4346-8562-d438a2f92ce9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "number",
+          "value": 8
+        }
+      },
+      "id": "eb75ac8c-fc68-4f20-a539-0e9475a1171a"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "26b3595b-0da7-4b01-8d43-35ac161143a5",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "29"
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 4
+        }
+      },
+      "id": "bbba82b8-7717-4dda-9521-d33239754c56"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8912f139-7f88-44e4-96ba-94aed0b682ec",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L1"
+        },
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$actor[1]$": "$self$"
+      },
+      "id": "47008988-1766-42d3-9caf-6a0a355830a7"
+    }
+  ]
+}

@@ -14,7 +14,8 @@
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
-          "start"
+          "start",
+          "a"
         ],
         "override": true,
         "__scriptTabs": "press"
@@ -68,6 +69,17 @@
       "id": "03477c2b-1dd4-4e32-9991-553b7859f40f"
     }
   ],
-  "leaveScript": [],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start",
+          "a"
+        ]
+      },
+      "id": "bc025a7a-b12a-4c69-a1d6-c601dcec0759"
+    }
+  ],
   "_index": 0
 }

@@ -1,0 +1,276 @@
+{
+  "_resourceType": "script",
+  "id": "02030bae-89e2-40f1-b9da-581e681571a6",
+  "name": "selection_page_logic",
+  "symbol": "script_15",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "buy",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "item_level",
+      "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "obj_X_coords",
+      "passByReference": true
+    },
+    "V3": {
+      "id": "V3",
+      "name": "obj_Y_coords",
+      "passByReference": true
+    },
+    "V4": {
+      "id": "V4",
+      "name": "object_cost",
+      "passByReference": true
+    },
+    "V5": {
+      "id": "V5",
+      "name": "current_credit",
+      "passByReference": true
+    },
+    "V6": {
+      "id": "V6",
+      "name": "credit_after_purchase",
+      "passByReference": true
+    },
+    "V7": {
+      "id": "V7",
+      "name": "button",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "property",
+            "target": "player",
+            "property": "xpos"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "V2"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "property",
+                  "target": "player",
+                  "property": "ypos"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "V3"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "1435bdfb-186e-4b58-b42a-263cdfb26c60"
+                  },
+                  "id": "35f76b91-ebc7-4a9e-bd98-c440bd263139"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "This costs $V4$"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ceab0727-44b0-4faf-a5b2-6b3041f0acf1"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "V0",
+                    "trueText": "Yes",
+                    "falseText": "No"
+                  },
+                  "id": "e1f9a255-5a57-4042-8e8e-4515f4a630aa"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "V0"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH_EVALUATE",
+                        "args": {
+                          "variable": "V6",
+                          "expression": "$V5$-$V4$"
+                        },
+                        "id": "fc0d90f5-5108-4587-bf58-19cb08f5fbbf"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gte",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "V6"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 6
+                              },
+                              "id": "7400f668-562c-4427-93d5-d57d0561f3d1"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "V7",
+                                "value": {
+                                  "type": "variable",
+                                  "value": "V1"
+                                }
+                              },
+                              "id": "6d7fd3ff-6e3a-47b3-bcb0-35a66da69c96"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "V5",
+                                "value": {
+                                  "type": "variable",
+                                  "value": "V6"
+                                }
+                              },
+                              "id": "3063349b-a489-4ab6-8273-97ae0129bfba"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You have \n$06$ credits"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "3679b8b1-e197-40ca-a48e-85c73e60b368"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "L/R level = $18$ "
+                                ],
+                                "avatarId": "",
+                                "__comment": true,
+                                "__collapse": false
+                              },
+                              "id": "6ffef9d3-74b3-4695-bf39-5d59e62feab1"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "d30cd638-e980-4acf-bfed-0a37722cbbfd",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 3
+                              },
+                              "id": "e15cd802-2d61-4b8a-94df-c5e623e85443"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You don't have \nenough credits"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "4b34ee85-b4f4-4d57-bec0-1a80527ee8e6"
+                            }
+                          ]
+                        },
+                        "id": "47be2772-5d09-4e66-a3c5-930acb35ad15"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "f77f21a0-755e-4329-be1f-d6ec86822951"
+                }
+              ],
+              "false": []
+            },
+            "id": "cf5598d6-d41b-4deb-a0d1-d92620b14205"
+          }
+        ],
+        "false": []
+      },
+      "id": "dfc60df9-66ef-4932-8761-e94a57d4d2ff"
+    }
+  ]
+}
